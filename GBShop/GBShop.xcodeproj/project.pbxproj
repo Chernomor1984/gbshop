@@ -33,6 +33,9 @@
 		D425360220EF06DF00986A85 /* ChangeUserDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360120EF06DF00986A85 /* ChangeUserDataResult.swift */; };
 		D425360520EF079B00986A85 /* ChangeUserDataRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360420EF079B00986A85 /* ChangeUserDataRequestFactory.swift */; };
 		D425360720EF080B00986A85 /* ChangeUserDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360620EF080B00986A85 /* ChangeUserDataFactory.swift */; };
+		D425360A20EF0B0B00986A85 /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360920EF0B0B00986A85 /* LogoutResult.swift */; };
+		D425360C20EF0B5500986A85 /* LogoutRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360B20EF0B5500986A85 /* LogoutRequestFactory.swift */; };
+		D425360E20EF0BF200986A85 /* LogoutFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360D20EF0BF200986A85 /* LogoutFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		D425360120EF06DF00986A85 /* ChangeUserDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataResult.swift; sourceTree = "<group>"; };
 		D425360420EF079B00986A85 /* ChangeUserDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestFactory.swift; sourceTree = "<group>"; };
 		D425360620EF080B00986A85 /* ChangeUserDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataFactory.swift; sourceTree = "<group>"; };
+		D425360920EF0B0B00986A85 /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
+		D425360B20EF0B5500986A85 /* LogoutRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequestFactory.swift; sourceTree = "<group>"; };
+		D425360D20EF0BF200986A85 /* LogoutFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutFactory.swift; sourceTree = "<group>"; };
 		E4C84B3397E4649FA125EFEA /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0AEBF4C6BFCEB789C3D39 /* Pods-GBShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShopUITests/Pods-GBShopUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,6 +260,7 @@
 				D42535EC20EEF69700986A85 /* User.swift */,
 				D42535F520EEFF0200986A85 /* RegistrationResult.swift */,
 				D425360120EF06DF00986A85 /* ChangeUserDataResult.swift */,
+				D425360920EF0B0B00986A85 /* LogoutResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -293,6 +300,7 @@
 				D42535FB20EF005E00986A85 /* Auth */,
 				D42535FC20EF007A00986A85 /* Registration */,
 				D425360320EF074400986A85 /* ChangeUserData */,
+				D425360820EF0ABE00986A85 /* Logout */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -323,6 +331,15 @@
 				D425360620EF080B00986A85 /* ChangeUserDataFactory.swift */,
 			);
 			path = ChangeUserData;
+			sourceTree = "<group>";
+		};
+		D425360820EF0ABE00986A85 /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				D425360B20EF0B5500986A85 /* LogoutRequestFactory.swift */,
+				D425360D20EF0BF200986A85 /* LogoutFactory.swift */,
+			);
+			path = Logout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,6 +560,8 @@
 				D425360220EF06DF00986A85 /* ChangeUserDataResult.swift in Sources */,
 				D42535F820EEFFA200986A85 /* BaseRequestFactory.swift in Sources */,
 				D42535ED20EEF69700986A85 /* User.swift in Sources */,
+				D425360C20EF0B5500986A85 /* LogoutRequestFactory.swift in Sources */,
+				D425360E20EF0BF200986A85 /* LogoutFactory.swift in Sources */,
 				D42535F220EEF92400986A85 /* AuthFactory.swift in Sources */,
 				D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */,
 				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
@@ -552,6 +571,7 @@
 				D42535FA20EF003F00986A85 /* RegistrationFactory.swift in Sources */,
 				D425360720EF080B00986A85 /* ChangeUserDataFactory.swift in Sources */,
 				D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */,
+				D425360A20EF0B0B00986A85 /* LogoutResult.swift in Sources */,
 				D42535E720EEF04C00986A85 /* AbstractRequestFaсtory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

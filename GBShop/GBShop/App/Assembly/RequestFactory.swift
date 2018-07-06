@@ -37,4 +37,9 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return ChangeUserDataFactory(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
     }
+    
+    func makeLogoutRequestFactory() -> LogoutRequestFactory {
+        let errorParser = makeErrorParser()
+        return LogoutFactory(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
+    }
 }

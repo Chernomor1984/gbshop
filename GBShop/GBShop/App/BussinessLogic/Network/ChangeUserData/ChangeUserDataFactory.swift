@@ -12,8 +12,8 @@ class ChangeUserDataFactory: BaseRequestFactory {}
 
 extension ChangeUserDataFactory: ChangeUserDataRequestFactory {
     func changeUserData(params: RegistrationParams, completionHandler: @escaping (DataResponse<ChangeUserDataResult>) -> Void) {
-        let changeUserData = ChangeUserData(baseURL: baseUrl, changeUserDataParams: params)
-        self.request(request: changeUserData, completionHandler: completionHandler)
+        let changeUserDataRequest = ChangeUserData(baseURL: baseUrl, changeUserDataParams: params)
+        self.request(request: changeUserDataRequest, completionHandler: completionHandler)
     }
 }
 

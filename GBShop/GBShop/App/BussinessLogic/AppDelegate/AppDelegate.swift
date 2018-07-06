@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         login()
         registration()
         changeUserData()
+        logout()
         return true
     }
     
@@ -64,6 +65,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                            bio: "This is good! I think I will switch to another language")
         
         changeUserFactory.changeUserData(params: newParams) { (response) in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func logout() {
+        let logoutFactory = requestFactory.makeLogoutRequestFactory()
+        logoutFactory.logout(userID: 123) { (response) in
             switch response.result {
             case .success(let login):
                 print(login)
