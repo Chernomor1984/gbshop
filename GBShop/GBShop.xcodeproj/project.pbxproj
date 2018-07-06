@@ -15,6 +15,16 @@
 		D411D3BE20EAFB0B0040EB27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D411D3BC20EAFB0B0040EB27 /* LaunchScreen.storyboard */; };
 		D411D3C920EAFB0B0040EB27 /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411D3C820EAFB0B0040EB27 /* GBShopTests.swift */; };
 		D411D3D420EAFB0B0040EB27 /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411D3D320EAFB0B0040EB27 /* GBShopUITests.swift */; };
+		D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535E020EEE7B200986A85 /* AbstractErrorParser.swift */; };
+		D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535E220EEE7FB00986A85 /* ErrorParser.swift */; };
+		D42535E520EEE85600986A85 /* DataRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535E420EEE85600986A85 /* DataRequestExtension.swift */; };
+		D42535E720EEF04C00986A85 /* AbstractRequestFaсtory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535E620EEF04C00986A85 /* AbstractRequestFaсtory.swift */; };
+		D42535E920EEF50200986A85 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535E820EEF50200986A85 /* RequestRouter.swift */; };
+		D42535EB20EEF67900986A85 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535EA20EEF67900986A85 /* LoginResult.swift */; };
+		D42535ED20EEF69700986A85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535EC20EEF69700986A85 /* User.swift */; };
+		D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535EF20EEF7FA00986A85 /* AuthRequestFactory.swift */; };
+		D42535F220EEF92400986A85 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535F120EEF92400986A85 /* Auth.swift */; };
+		D42535F420EEFB2000986A85 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535F320EEFB2000986A85 /* RequestFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,16 @@
 		D411D3CF20EAFB0B0040EB27 /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D411D3D320EAFB0B0040EB27 /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		D411D3D520EAFB0B0040EB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42535E020EEE7B200986A85 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
+		D42535E220EEE7FB00986A85 /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
+		D42535E420EEE85600986A85 /* DataRequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestExtension.swift; sourceTree = "<group>"; };
+		D42535E620EEF04C00986A85 /* AbstractRequestFaсtory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AbstractRequestFaсtory.swift"; sourceTree = "<group>"; };
+		D42535E820EEF50200986A85 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		D42535EA20EEF67900986A85 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		D42535EC20EEF69700986A85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D42535EF20EEF7FA00986A85 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
+		D42535F120EEF92400986A85 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		D42535F320EEFB2000986A85 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		E4C84B3397E4649FA125EFEA /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0AEBF4C6BFCEB789C3D39 /* Pods-GBShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShopUITests/Pods-GBShopUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +200,7 @@
 		D411D3E320EB001C0040EB27 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D42535DF20EEE78800986A85 /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -204,6 +225,7 @@
 		D411D3E820EB01F90040EB27 /* BussinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				D42535EE20EEF6DC00986A85 /* Network */,
 				D411D3EB20EB024D0040EB27 /* AppDelegate */,
 			);
 			path = BussinessLogic;
@@ -212,6 +234,8 @@
 		D411D3E920EB02090040EB27 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				D42535EA20EEF67900986A85 /* LoginResult.swift */,
+				D42535EC20EEF69700986A85 /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -219,6 +243,7 @@
 		D411D3EA20EB021E0040EB27 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				D42535F320EEFB2000986A85 /* RequestFactory.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -229,6 +254,27 @@
 				D411D3B320EAFB0B0040EB27 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D42535DF20EEE78800986A85 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D42535E020EEE7B200986A85 /* AbstractErrorParser.swift */,
+				D42535E220EEE7FB00986A85 /* ErrorParser.swift */,
+				D42535E420EEE85600986A85 /* DataRequestExtension.swift */,
+				D42535E620EEF04C00986A85 /* AbstractRequestFaсtory.swift */,
+				D42535E820EEF50200986A85 /* RequestRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D42535EE20EEF6DC00986A85 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D42535EF20EEF7FA00986A85 /* AuthRequestFactory.swift */,
+				D42535F120EEF92400986A85 /* Auth.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,7 +486,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42535F420EEFB2000986A85 /* RequestFactory.swift in Sources */,
 				D411D3B420EAFB0B0040EB27 /* AppDelegate.swift in Sources */,
+				D42535EB20EEF67900986A85 /* LoginResult.swift in Sources */,
+				D42535E520EEE85600986A85 /* DataRequestExtension.swift in Sources */,
+				D42535E920EEF50200986A85 /* RequestRouter.swift in Sources */,
+				D42535ED20EEF69700986A85 /* User.swift in Sources */,
+				D42535F220EEF92400986A85 /* Auth.swift in Sources */,
+				D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */,
+				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
+				D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */,
+				D42535E720EEF04C00986A85 /* AbstractRequestFaсtory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
