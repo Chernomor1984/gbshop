@@ -1,5 +1,5 @@
 //
-//  LogoutFactory.swift
+//  LogoutRequestPerformer.swift
 //  GBShop
 //
 //  Created by Eugene Khizhnyak on 06.07.2018.
@@ -8,16 +8,16 @@
 
 import Alamofire
 
-class LogoutFactory: BaseRequestFactory {}
+class LogoutRequestPerformer: BaseRequestPerformer {}
 
-extension LogoutFactory: LogoutRequestFactory {
+extension LogoutRequestPerformer: LogoutRequestFactory {
     func logout(userID: Int, completionHandler: @escaping (DataResponse<LogoutResult>) -> Void) {
         let logoutRequest = Logout(baseURL: baseUrl, userID: userID)
         self.request(request: logoutRequest, completionHandler: completionHandler)
     }
 }
 
-extension LogoutFactory {
+extension LogoutRequestPerformer {
     struct Logout: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get

@@ -1,5 +1,5 @@
 //
-//  ChangeUserDataFactory.swift
+//  ChangeUserDataRequestPerformer.swift
 //  GBShop
 //
 //  Created by Eugene Khizhnyak on 06.07.2018.
@@ -8,16 +8,16 @@
 
 import Alamofire
 
-class ChangeUserDataFactory: BaseRequestFactory {}
+class ChangeUserDataRequestPerformer: BaseRequestPerformer {}
 
-extension ChangeUserDataFactory: ChangeUserDataRequestFactory {
+extension ChangeUserDataRequestPerformer: ChangeUserDataRequestFactory {
     func changeUserData(params: RegistrationParams, completionHandler: @escaping (DataResponse<ChangeUserDataResult>) -> Void) {
         let changeUserDataRequest = ChangeUserData(baseURL: baseUrl, changeUserDataParams: params)
         self.request(request: changeUserDataRequest, completionHandler: completionHandler)
     }
 }
 
-extension ChangeUserDataFactory {
+extension ChangeUserDataRequestPerformer {
     struct ChangeUserData: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get

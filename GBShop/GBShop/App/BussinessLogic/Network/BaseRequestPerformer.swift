@@ -8,7 +8,7 @@
 
 import Alamofire
 
-class BaseRequestFactory: AbstractRequestFaсtory {
+class BaseRequestPerformer: AbstractRequestFaсtory {
     let errorParser: AbstractErrorParser
     let sessionManager: SessionManager
     let queue: DispatchQueue?

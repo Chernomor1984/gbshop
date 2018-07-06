@@ -25,21 +25,21 @@ class RequestFactory {
     
     func makeAuthRequestFactory() -> AuthRequestFactory {
         let errorParser = makeErrorParser()
-        return AuthFactory(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
+        return AuthRequestPerformer(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
     }
     
     func makeRegistrationRequestFactory() -> RegistrationRequestFactory {
         let errorParser = makeErrorParser()
-        return RegistrationFactory(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
+        return RegistrationRequestPerformer(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
     }
     
     func makeChangeUserDataRequestFactory() -> ChangeUserDataRequestFactory {
         let errorParser = makeErrorParser()
-        return ChangeUserDataFactory(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
+        return ChangeUserDataRequestPerformer(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
     }
     
     func makeLogoutRequestFactory() -> LogoutRequestFactory {
         let errorParser = makeErrorParser()
-        return LogoutFactory(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
+        return LogoutRequestPerformer(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
     }
 }

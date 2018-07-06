@@ -8,16 +8,16 @@
 
 import Alamofire
 
-class AuthFactory: BaseRequestFactory {}
+class AuthRequestPerformer: BaseRequestPerformer {}
 
-extension AuthFactory: AuthRequestFactory {
+extension AuthRequestPerformer: AuthRequestFactory {
     func login(userName: String, password: String, completionHandler: @escaping (DataResponse<LoginResult>) -> Void) {
         let requestModel = Login(baseURL: baseUrl, login: userName, password: password)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
 }
 
-extension AuthFactory {
+extension AuthRequestPerformer {
     struct Login: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get

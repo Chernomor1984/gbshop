@@ -1,5 +1,5 @@
 //
-//  RegistrationFactory.swift
+//  RegistrationRequestPerformer.swift
 //  GBShop
 //
 //  Created by Eugene Khizhnyak on 06.07.2018.
@@ -8,16 +8,16 @@
 
 import Alamofire
 
-class RegistrationFactory: BaseRequestFactory {}
+class RegistrationRequestPerformer: BaseRequestPerformer {}
 
-extension RegistrationFactory: RegistrationRequestFactory {
+extension RegistrationRequestPerformer: RegistrationRequestFactory {
     func registerUser(params: RegistrationParams, completionHandler: @escaping (DataResponse<RegistrationResult>) -> Void) {
         let registrationRequest = Registration(baseURL: baseUrl, registrationParams: params)
         self.request(request: registrationRequest, completionHandler: completionHandler)
     }
 }
 
-extension RegistrationFactory {
+extension RegistrationRequestPerformer {
     struct Registration: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get
