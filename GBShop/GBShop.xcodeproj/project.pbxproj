@@ -23,8 +23,13 @@
 		D42535EB20EEF67900986A85 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535EA20EEF67900986A85 /* LoginResult.swift */; };
 		D42535ED20EEF69700986A85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535EC20EEF69700986A85 /* User.swift */; };
 		D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535EF20EEF7FA00986A85 /* AuthRequestFactory.swift */; };
-		D42535F220EEF92400986A85 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535F120EEF92400986A85 /* Auth.swift */; };
+		D42535F220EEF92400986A85 /* AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535F120EEF92400986A85 /* AuthFactory.swift */; };
 		D42535F420EEFB2000986A85 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535F320EEFB2000986A85 /* RequestFactory.swift */; };
+		D42535F620EEFF0200986A85 /* RegistrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535F520EEFF0200986A85 /* RegistrationResult.swift */; };
+		D42535F820EEFFA200986A85 /* BaseRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535F720EEFFA200986A85 /* BaseRequestFactory.swift */; };
+		D42535FA20EF003F00986A85 /* RegistrationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535F920EF003F00986A85 /* RegistrationFactory.swift */; };
+		D42535FE20EF009700986A85 /* RegistrationRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535FD20EF009700986A85 /* RegistrationRequestFactory.swift */; };
+		D425360020EF011200986A85 /* RegistrationParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535FF20EF011200986A85 /* RegistrationParams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +76,13 @@
 		D42535EA20EEF67900986A85 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		D42535EC20EEF69700986A85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D42535EF20EEF7FA00986A85 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
-		D42535F120EEF92400986A85 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		D42535F120EEF92400986A85 /* AuthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFactory.swift; sourceTree = "<group>"; };
 		D42535F320EEFB2000986A85 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		D42535F520EEFF0200986A85 /* RegistrationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationResult.swift; sourceTree = "<group>"; };
+		D42535F720EEFFA200986A85 /* BaseRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestFactory.swift; sourceTree = "<group>"; };
+		D42535F920EF003F00986A85 /* RegistrationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFactory.swift; sourceTree = "<group>"; };
+		D42535FD20EF009700986A85 /* RegistrationRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRequestFactory.swift; sourceTree = "<group>"; };
+		D42535FF20EF011200986A85 /* RegistrationParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationParams.swift; sourceTree = "<group>"; };
 		E4C84B3397E4649FA125EFEA /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0AEBF4C6BFCEB789C3D39 /* Pods-GBShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShopUITests/Pods-GBShopUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +246,7 @@
 			children = (
 				D42535EA20EEF67900986A85 /* LoginResult.swift */,
 				D42535EC20EEF69700986A85 /* User.swift */,
+				D42535F520EEFF0200986A85 /* RegistrationResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -271,10 +282,30 @@
 		D42535EE20EEF6DC00986A85 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				D42535EF20EEF7FA00986A85 /* AuthRequestFactory.swift */,
-				D42535F120EEF92400986A85 /* Auth.swift */,
+				D42535F720EEFFA200986A85 /* BaseRequestFactory.swift */,
+				D42535FB20EF005E00986A85 /* Auth */,
+				D42535FC20EF007A00986A85 /* Registration */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		D42535FB20EF005E00986A85 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D42535EF20EEF7FA00986A85 /* AuthRequestFactory.swift */,
+				D42535F120EEF92400986A85 /* AuthFactory.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D42535FC20EF007A00986A85 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				D42535FD20EF009700986A85 /* RegistrationRequestFactory.swift */,
+				D42535F920EF003F00986A85 /* RegistrationFactory.swift */,
+				D42535FF20EF011200986A85 /* RegistrationParams.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,13 +519,18 @@
 			files = (
 				D42535F420EEFB2000986A85 /* RequestFactory.swift in Sources */,
 				D411D3B420EAFB0B0040EB27 /* AppDelegate.swift in Sources */,
+				D425360020EF011200986A85 /* RegistrationParams.swift in Sources */,
 				D42535EB20EEF67900986A85 /* LoginResult.swift in Sources */,
 				D42535E520EEE85600986A85 /* DataRequestExtension.swift in Sources */,
 				D42535E920EEF50200986A85 /* RequestRouter.swift in Sources */,
+				D42535F820EEFFA200986A85 /* BaseRequestFactory.swift in Sources */,
 				D42535ED20EEF69700986A85 /* User.swift in Sources */,
-				D42535F220EEF92400986A85 /* Auth.swift in Sources */,
+				D42535F220EEF92400986A85 /* AuthFactory.swift in Sources */,
 				D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */,
 				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
+				D42535FE20EF009700986A85 /* RegistrationRequestFactory.swift in Sources */,
+				D42535F620EEFF0200986A85 /* RegistrationResult.swift in Sources */,
+				D42535FA20EF003F00986A85 /* RegistrationFactory.swift in Sources */,
 				D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */,
 				D42535E720EEF04C00986A85 /* AbstractRequestFaсtory.swift in Sources */,
 			);
