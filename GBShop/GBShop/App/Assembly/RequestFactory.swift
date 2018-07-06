@@ -32,4 +32,9 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return RegistrationFactory(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
     }
+    
+    func makeChangeUserDataRequestFactory() -> ChangeUserDataRequestFactory {
+        let errorParser = makeErrorParser()
+        return ChangeUserDataFactory(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
+    }
 }

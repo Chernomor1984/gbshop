@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         login()
         registration()
+        changeUserData()
         return true
     }
     
@@ -43,6 +44,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                     bio: "This is good! I think I will switch to another language")
         
         registrationFactory.registerUser(params: registrationParams) { (response) in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func changeUserData() {
+        let changeUserFactory = requestFactory.makeChangeUserDataRequestFactory()
+        let newParams = RegistrationParams(userID: 123,
+                                           username: "Somebody",
+                                           password: "mypassword",
+                                           email: "some@some.ru",
+                                           gender: "m",
+                                           creditCardNumber: "9872389-2424-234224-234",
+                                           bio: "This is good! I think I will switch to another language")
+        
+        changeUserFactory.changeUserData(params: newParams) { (response) in
             switch response.result {
             case .success(let login):
                 print(login)
