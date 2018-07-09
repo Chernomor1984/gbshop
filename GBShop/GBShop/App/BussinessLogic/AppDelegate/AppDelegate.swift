@@ -22,9 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func login() {
-        let AuthRequestPerformer = requestFactory.makeAuthRequestFactory()
+        let authRequestPerformer = requestFactory.makeAuthRequestFactory()
         
-        AuthRequestPerformer.login(userName: "Somebody", password: "mypassword") { response in
+        authRequestPerformer.login(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
             case .success(let login):
                 print(login)
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func registration() {
-        let RegistrationRequestPerformer = requestFactory.makeRegistrationRequestFactory()
+        let authRequestPerformer = requestFactory.makeAuthRequestFactory()
         let registrationParams = RegistrationParams(userID: 123,
                                                     username: "Somebody",
                                                     password: "mypassword",
@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                     creditCardNumber: "9872389-2424-234224-234",
                                                     bio: "This is good! I think I will switch to another language")
         
-        RegistrationRequestPerformer.registerUser(params: registrationParams) { (response) in
+        authRequestPerformer.registerUser(params: registrationParams) { (response) in
             switch response.result {
             case .success(let login):
                 print(login)
@@ -75,8 +75,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func logout() {
-        let LogoutRequestPerformer = requestFactory.makeLogoutRequestFactory()
-        LogoutRequestPerformer.logout(userID: 123) { (response) in
+        let authRequestPerformer = requestFactory.makeAuthRequestFactory()
+        authRequestPerformer.logout(userID: 123) { (response) in
             switch response.result {
             case .success(let login):
                 print(login)
