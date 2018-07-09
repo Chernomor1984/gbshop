@@ -12,11 +12,16 @@ class BaseRequestPerformer: AbstractRequestFaсtory {
     let errorParser: AbstractErrorParser
     let sessionManager: SessionManager
     let queue: DispatchQueue?
-    let baseUrl = URL(string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    let baseURL: URL
     
-    init(errorParser: AbstractErrorParser, sessionManager: SessionManager, queue: DispatchQueue? = DispatchQueue.global(qos: .utility)) {
+    init(errorParser: AbstractErrorParser,
+         sessionManager: SessionManager,
+         queue: DispatchQueue? = DispatchQueue.global(qos: .utility),
+         urlConfigurator: URLConfiguration = BaseURLConfigurator()) {
+        
         self.errorParser = errorParser
         self.sessionManager = sessionManager
         self.queue = queue
+        self.baseURL = urlConfigurator.baseURL
     }
 }
