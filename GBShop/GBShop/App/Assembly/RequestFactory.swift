@@ -32,4 +32,9 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return ChangeUserDataRequestPerformer(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
     }
+    
+    func makeProductsRequestFactory() -> ProductsRequestFactory {
+        let errorParser = makeErrorParser()
+        return ProductsRequestPerformer(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
+    }
 }

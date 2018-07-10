@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         registration()
         changeUserData()
         logout()
+        fetchProductsList()
+        fetchProduct()
         return true
     }
     
@@ -26,8 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         authRequestPerformer.login(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
-            case .success(let login):
-                print(login)
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -46,8 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         authRequestPerformer.registerUser(params: registrationParams) { (response) in
             switch response.result {
-            case .success(let login):
-                print(login)
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -66,8 +68,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         changeUserFactory.changeUserData(params: newParams) { (response) in
             switch response.result {
-            case .success(let login):
-                print(login)
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -78,8 +80,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let authRequestPerformer = requestFactory.makeAuthRequestFactory()
         authRequestPerformer.logout(userID: 123) { (response) in
             switch response.result {
-            case .success(let login):
-                print(login)
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func fetchProductsList() {
+        let productsRequestPerformer = requestFactory.makeProductsRequestFactory()
+        productsRequestPerformer.fetchProductsList(pageNumber: 1, categoryID: 1) { (response) in
+            switch response.result {
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func fetchProduct() {
+        let productsRequestPerformer = requestFactory.makeProductsRequestFactory()
+        productsRequestPerformer.fetchProduct(productID: 456) { (response) in
+            switch response.result {
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(error.localizedDescription)
             }

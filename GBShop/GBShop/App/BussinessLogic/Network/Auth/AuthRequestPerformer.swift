@@ -10,18 +10,18 @@ import Alamofire
 
 class AuthRequestPerformer: BaseRequestPerformer, AuthRequestFactory {
     func login(userName: String, password: String, completionHandler: @escaping (DataResponse<LoginResult>) -> Void) {
-        let requestModel = Login(baseURL: baseURL, login: userName, password: password)
-        self.request(request: requestModel, completionHandler: completionHandler)
+        let loginRequest = Login(baseURL: baseURL, login: userName, password: password)
+        request(request: loginRequest, completionHandler: completionHandler)
     }
     
     func registerUser(params: RegistrationParams, completionHandler: @escaping (DataResponse<RegistrationResult>) -> Void) {
         let registrationRequest = Registration(baseURL: baseURL, registrationParams: params)
-        self.request(request: registrationRequest, completionHandler: completionHandler)
+        request(request: registrationRequest, completionHandler: completionHandler)
     }
     
     func logout(userID: Int, completionHandler: @escaping (DataResponse<LogoutResult>) -> Void) {
         let logoutRequest = Logout(baseURL: baseURL, userID: userID)
-        self.request(request: logoutRequest, completionHandler: completionHandler)
+        request(request: logoutRequest, completionHandler: completionHandler)
     }
 }
 

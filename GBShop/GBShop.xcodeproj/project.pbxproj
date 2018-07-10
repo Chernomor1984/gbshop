@@ -35,6 +35,10 @@
 		D480464220F2ED0800E78A72 /* BaseURLConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464120F2ED0800E78A72 /* BaseURLConfigurator.swift */; };
 		D480464420F2EDA400E78A72 /* URLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464320F2EDA400E78A72 /* URLConfiguration.swift */; };
 		D480464620F505F500E78A72 /* MethodNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464520F505F500E78A72 /* MethodNames.swift */; };
+		D480464A20F50AB700E78A72 /* ProductsRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464920F50AB700E78A72 /* ProductsRequestFactory.swift */; };
+		D480464C20F50C2F00E78A72 /* ProductsRequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464B20F50C2F00E78A72 /* ProductsRequestPerformer.swift */; };
+		D480464E20F50D1C00E78A72 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464D20F50D1C00E78A72 /* ProductList.swift */; };
+		D480465220F56A2F00E78A72 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465120F56A2F00E78A72 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,10 @@
 		D480464120F2ED0800E78A72 /* BaseURLConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLConfigurator.swift; sourceTree = "<group>"; };
 		D480464320F2EDA400E78A72 /* URLConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConfiguration.swift; sourceTree = "<group>"; };
 		D480464520F505F500E78A72 /* MethodNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodNames.swift; sourceTree = "<group>"; };
+		D480464920F50AB700E78A72 /* ProductsRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestFactory.swift; sourceTree = "<group>"; };
+		D480464B20F50C2F00E78A72 /* ProductsRequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestPerformer.swift; sourceTree = "<group>"; };
+		D480464D20F50D1C00E78A72 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		D480465120F56A2F00E78A72 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		E4C84B3397E4649FA125EFEA /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0AEBF4C6BFCEB789C3D39 /* Pods-GBShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShopUITests/Pods-GBShopUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +267,8 @@
 				D42535F520EEFF0200986A85 /* RegistrationResult.swift */,
 				D425360120EF06DF00986A85 /* ChangeUserDataResult.swift */,
 				D425360920EF0B0B00986A85 /* LogoutResult.swift */,
+				D480464D20F50D1C00E78A72 /* ProductList.swift */,
+				D480465120F56A2F00E78A72 /* Product.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -296,8 +306,8 @@
 			children = (
 				D480464520F505F500E78A72 /* MethodNames.swift */,
 				D42535F720EEFFA200986A85 /* BaseRequestPerformer.swift */,
-				D480464120F2ED0800E78A72 /* BaseURLConfigurator.swift */,
-				D480464320F2EDA400E78A72 /* URLConfiguration.swift */,
+				D480464720F50A6300E78A72 /* URLConfiguration */,
+				D480464820F50A8700E78A72 /* Catalog */,
 				D42535FB20EF005E00986A85 /* Auth */,
 				D425360320EF074400986A85 /* ChangeUserData */,
 			);
@@ -321,6 +331,24 @@
 				D425360620EF080B00986A85 /* ChangeUserDataRequestPerformer.swift */,
 			);
 			path = ChangeUserData;
+			sourceTree = "<group>";
+		};
+		D480464720F50A6300E78A72 /* URLConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				D480464120F2ED0800E78A72 /* BaseURLConfigurator.swift */,
+				D480464320F2EDA400E78A72 /* URLConfiguration.swift */,
+			);
+			path = URLConfiguration;
+			sourceTree = "<group>";
+		};
+		D480464820F50A8700E78A72 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				D480464920F50AB700E78A72 /* ProductsRequestFactory.swift */,
+				D480464B20F50C2F00E78A72 /* ProductsRequestPerformer.swift */,
+			);
+			path = Catalog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,7 +569,9 @@
 				D425360020EF011200986A85 /* RegistrationParams.swift in Sources */,
 				D42535EB20EEF67900986A85 /* LoginResult.swift in Sources */,
 				D42535E520EEE85600986A85 /* DataRequestExtension.swift in Sources */,
+				D480465220F56A2F00E78A72 /* Product.swift in Sources */,
 				D42535E920EEF50200986A85 /* RequestRouter.swift in Sources */,
+				D480464A20F50AB700E78A72 /* ProductsRequestFactory.swift in Sources */,
 				D425360220EF06DF00986A85 /* ChangeUserDataResult.swift in Sources */,
 				D42535F820EEFFA200986A85 /* BaseRequestPerformer.swift in Sources */,
 				D42535ED20EEF69700986A85 /* User.swift in Sources */,
@@ -550,9 +580,11 @@
 				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
 				D425360520EF079B00986A85 /* ChangeUserDataRequestFactory.swift in Sources */,
 				D42535F620EEFF0200986A85 /* RegistrationResult.swift in Sources */,
+				D480464E20F50D1C00E78A72 /* ProductList.swift in Sources */,
 				D480464620F505F500E78A72 /* MethodNames.swift in Sources */,
 				D425360720EF080B00986A85 /* ChangeUserDataRequestPerformer.swift in Sources */,
 				D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */,
+				D480464C20F50C2F00E78A72 /* ProductsRequestPerformer.swift in Sources */,
 				D425360A20EF0B0B00986A85 /* LogoutResult.swift in Sources */,
 				D42535E720EEF04C00986A85 /* AbstractRequestFaсtory.swift in Sources */,
 			);

@@ -13,7 +13,7 @@ class ChangeUserDataRequestPerformer: BaseRequestPerformer {}
 extension ChangeUserDataRequestPerformer: ChangeUserDataRequestFactory {
     func changeUserData(params: RegistrationParams, completionHandler: @escaping (DataResponse<ChangeUserDataResult>) -> Void) {
         let changeUserDataRequest = ChangeUserData(baseURL: baseURL, changeUserDataParams: params)
-        self.request(request: changeUserDataRequest, completionHandler: completionHandler)
+        request(request: changeUserDataRequest, completionHandler: completionHandler)
     }
 }
 
