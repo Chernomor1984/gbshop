@@ -21,7 +21,7 @@ extension ChangeUserDataRequestPerformer {
     struct ChangeUserData: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get
-        let path: String = "changeUserData.json"
+        let path: String = MethodNames.changeUserData.method
         let changeUserDataParams: RegistrationParams
         
         var parameters: Parameters? {

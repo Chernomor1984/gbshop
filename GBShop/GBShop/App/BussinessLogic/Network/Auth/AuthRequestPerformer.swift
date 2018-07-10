@@ -29,7 +29,7 @@ extension AuthRequestPerformer {
     struct Login: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get
-        let path: String = "login.json"
+        let path: String = MethodNames.login.method
         let login: String
         let password: String
         
@@ -46,7 +46,7 @@ extension AuthRequestPerformer {
     struct Registration: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get
-        let path: String = "registerUser.json"
+        let path: String = MethodNames.registerUser.method
         let registrationParams: RegistrationParams
         
         var parameters: Parameters? {
@@ -67,7 +67,7 @@ extension AuthRequestPerformer {
     struct Logout: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get
-        let path: String = "changeUserData.json"
+        let path: String = MethodNames.logout.method
         let userID: Int
         
         var parameters: Parameters? {
