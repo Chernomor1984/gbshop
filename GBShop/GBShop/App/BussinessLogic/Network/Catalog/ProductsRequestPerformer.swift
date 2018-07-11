@@ -24,7 +24,7 @@ extension ProductsRequestPerformer {
     struct ProductEntity: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get
-        let path: String = MethodNames.fetchProduct.method
+        let path: String = MethodNames.fetchProduct.rawValue
         let productID: Int
         
         var parameters: Parameters? {
@@ -39,7 +39,7 @@ extension ProductsRequestPerformer {
     struct ProductsList: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get
-        let path: String = MethodNames.fetchProductsList.method
+        let path: String = MethodNames.fetchProductsList.rawValue
         let pageNumber: Int
         let categoryID: Int
         

@@ -13,7 +13,6 @@
 		D411D3B420EAFB0B0040EB27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411D3B320EAFB0B0040EB27 /* AppDelegate.swift */; };
 		D411D3BB20EAFB0B0040EB27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D411D3BA20EAFB0B0040EB27 /* Assets.xcassets */; };
 		D411D3BE20EAFB0B0040EB27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D411D3BC20EAFB0B0040EB27 /* LaunchScreen.storyboard */; };
-		D411D3C920EAFB0B0040EB27 /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411D3C820EAFB0B0040EB27 /* GBShopTests.swift */; };
 		D411D3D420EAFB0B0040EB27 /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411D3D320EAFB0B0040EB27 /* GBShopUITests.swift */; };
 		D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535E020EEE7B200986A85 /* AbstractErrorParser.swift */; };
 		D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42535E220EEE7FB00986A85 /* ErrorParser.swift */; };
@@ -39,6 +38,20 @@
 		D480464C20F50C2F00E78A72 /* ProductsRequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464B20F50C2F00E78A72 /* ProductsRequestPerformer.swift */; };
 		D480464E20F50D1C00E78A72 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464D20F50D1C00E78A72 /* ProductList.swift */; };
 		D480465220F56A2F00E78A72 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465120F56A2F00E78A72 /* Product.swift */; };
+		D480465420F5730900E78A72 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465320F5730900E78A72 /* ResponseCodableTests.swift */; };
+		D480465620F5741F00E78A72 /* ErrorParserStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465520F5741F00E78A72 /* ErrorParserStub.swift */; };
+		D480465820F57DCD00E78A72 /* RequestFactoryMok.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465720F57DCD00E78A72 /* RequestFactoryMok.swift */; };
+		D480465A20F583C100E78A72 /* OHHTTPStubsResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465920F583C100E78A72 /* OHHTTPStubsResponseExtension.swift */; };
+		D480465D20F5848A00E78A72 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465C20F5848A00E78A72 /* StringUtils.swift */; };
+		D480466220F58D7C00E78A72 /* AuthRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480466120F58D7C00E78A72 /* AuthRequestPerformerTests.swift */; };
+		D480466F20F5962900E78A72 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466320F58F6C00E78A72 /* login.json */; };
+		D480467020F5962900E78A72 /* logout.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466520F58F9700E78A72 /* logout.json */; };
+		D480467120F5962900E78A72 /* registerUser.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466920F5904400E78A72 /* registerUser.json */; };
+		D480467220F5962900E78A72 /* changeUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466720F58FDF00E78A72 /* changeUserData.json */; };
+		D480467320F5962900E78A72 /* catalogData.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466B20F5906E00E78A72 /* catalogData.json */; };
+		D480467420F5962900E78A72 /* getGoodById.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466D20F590BF00E78A72 /* getGoodById.json */; };
+		D480467620F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */; };
+		D480467820F64B6D00E78A72 /* ProductsRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +85,6 @@
 		D411D3BD20EAFB0B0040EB27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D411D3BF20EAFB0B0040EB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D411D3C420EAFB0B0040EB27 /* GBShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D411D3C820EAFB0B0040EB27 /* GBShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopTests.swift; sourceTree = "<group>"; };
 		D411D3CA20EAFB0B0040EB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D411D3CF20EAFB0B0040EB27 /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D411D3D320EAFB0B0040EB27 /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
@@ -101,6 +113,20 @@
 		D480464B20F50C2F00E78A72 /* ProductsRequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestPerformer.swift; sourceTree = "<group>"; };
 		D480464D20F50D1C00E78A72 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		D480465120F56A2F00E78A72 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D480465320F5730900E78A72 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
+		D480465520F5741F00E78A72 /* ErrorParserStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParserStub.swift; sourceTree = "<group>"; };
+		D480465720F57DCD00E78A72 /* RequestFactoryMok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryMok.swift; sourceTree = "<group>"; };
+		D480465920F583C100E78A72 /* OHHTTPStubsResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHHTTPStubsResponseExtension.swift; sourceTree = "<group>"; };
+		D480465C20F5848A00E78A72 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		D480466120F58D7C00E78A72 /* AuthRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestPerformerTests.swift; sourceTree = "<group>"; };
+		D480466320F58F6C00E78A72 /* login.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		D480466520F58F9700E78A72 /* logout.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = logout.json; sourceTree = "<group>"; };
+		D480466720F58FDF00E78A72 /* changeUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = changeUserData.json; sourceTree = "<group>"; };
+		D480466920F5904400E78A72 /* registerUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = registerUser.json; sourceTree = "<group>"; };
+		D480466B20F5906E00E78A72 /* catalogData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalogData.json; sourceTree = "<group>"; };
+		D480466D20F590BF00E78A72 /* getGoodById.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getGoodById.json; sourceTree = "<group>"; };
+		D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestPerformerTests.swift; sourceTree = "<group>"; };
+		D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestPerformerTests.swift; sourceTree = "<group>"; };
 		E4C84B3397E4649FA125EFEA /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0AEBF4C6BFCEB789C3D39 /* Pods-GBShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShopUITests/Pods-GBShopUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,8 +219,14 @@
 		D411D3C720EAFB0B0040EB27 /* GBShopTests */ = {
 			isa = PBXGroup;
 			children = (
-				D411D3C820EAFB0B0040EB27 /* GBShopTests.swift */,
 				D411D3CA20EAFB0B0040EB27 /* Info.plist */,
+				D480465920F583C100E78A72 /* OHHTTPStubsResponseExtension.swift */,
+				D480465720F57DCD00E78A72 /* RequestFactoryMok.swift */,
+				D480465520F5741F00E78A72 /* ErrorParserStub.swift */,
+				D480465320F5730900E78A72 /* ResponseCodableTests.swift */,
+				D480466120F58D7C00E78A72 /* AuthRequestPerformerTests.swift */,
+				D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */,
+				D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */,
 			);
 			path = GBShopTests;
 			sourceTree = "<group>";
@@ -236,6 +268,7 @@
 		D411D3E420EB002D0040EB27 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D480465E20F5874D00E78A72 /* File stubs */,
 				D411D3BA20EAFB0B0040EB27 /* Assets.xcassets */,
 				D411D3BC20EAFB0B0040EB27 /* LaunchScreen.storyboard */,
 			);
@@ -253,6 +286,7 @@
 		D411D3E820EB01F90040EB27 /* BussinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				D480465B20F5847100E78A72 /* Utils */,
 				D42535EE20EEF6DC00986A85 /* Network */,
 				D411D3EB20EB024D0040EB27 /* AppDelegate */,
 			);
@@ -351,6 +385,27 @@
 			path = Catalog;
 			sourceTree = "<group>";
 		};
+		D480465B20F5847100E78A72 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D480465C20F5848A00E78A72 /* StringUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D480465E20F5874D00E78A72 /* File stubs */ = {
+			isa = PBXGroup;
+			children = (
+				D480466320F58F6C00E78A72 /* login.json */,
+				D480466520F58F9700E78A72 /* logout.json */,
+				D480466920F5904400E78A72 /* registerUser.json */,
+				D480466720F58FDF00E78A72 /* changeUserData.json */,
+				D480466B20F5906E00E78A72 /* catalogData.json */,
+				D480466D20F590BF00E78A72 /* getGoodById.json */,
+			);
+			path = "File stubs";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -426,6 +481,7 @@
 					};
 					D411D3C320EAFB0B0040EB27 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = D411D3AF20EAFB0B0040EB27;
 					};
 					D411D3CE20EAFB0B0040EB27 = {
@@ -460,7 +516,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D411D3BE20EAFB0B0040EB27 /* LaunchScreen.storyboard in Resources */,
+				D480467420F5962900E78A72 /* getGoodById.json in Resources */,
+				D480467120F5962900E78A72 /* registerUser.json in Resources */,
+				D480467220F5962900E78A72 /* changeUserData.json in Resources */,
+				D480467020F5962900E78A72 /* logout.json in Resources */,
+				D480467320F5962900E78A72 /* catalogData.json in Resources */,
 				D411D3BB20EAFB0B0040EB27 /* Assets.xcassets in Resources */,
+				D480466F20F5962900E78A72 /* login.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +624,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D480465D20F5848A00E78A72 /* StringUtils.swift in Sources */,
 				D480464420F2EDA400E78A72 /* URLConfiguration.swift in Sources */,
 				D42535F420EEFB2000986A85 /* RequestFactory.swift in Sources */,
 				D480464220F2ED0800E78A72 /* BaseURLConfigurator.swift in Sources */,
@@ -594,7 +657,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D411D3C920EAFB0B0040EB27 /* GBShopTests.swift in Sources */,
+				D480465820F57DCD00E78A72 /* RequestFactoryMok.swift in Sources */,
+				D480465A20F583C100E78A72 /* OHHTTPStubsResponseExtension.swift in Sources */,
+				D480465420F5730900E78A72 /* ResponseCodableTests.swift in Sources */,
+				D480467620F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift in Sources */,
+				D480465620F5741F00E78A72 /* ErrorParserStub.swift in Sources */,
+				D480467820F64B6D00E78A72 /* ProductsRequestPerformerTests.swift in Sources */,
+				D480466220F58D7C00E78A72 /* AuthRequestPerformerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,6 +862,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MLL2QM4L99;
 				INFOPLIST_FILE = GBShopTests/Info.plist;
@@ -803,6 +873,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chernomor.GBShopTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBShop.app/GBShop";
@@ -815,6 +886,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MLL2QM4L99;
 				INFOPLIST_FILE = GBShopTests/Info.plist;

@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func changeUserData() {
-        let changeUserFactory = requestFactory.makeChangeUserDataRequestFactory()
+        let changeUserPerformer = requestFactory.makeChangeUserDataRequestFactory()
         let newParams = RegistrationParams(userID: 123,
                                            username: "Somebody",
                                            password: "mypassword",
@@ -66,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                            creditCardNumber: "9872389-2424-234224-234",
                                            bio: "This is good! I think I will switch to another language")
         
-        changeUserFactory.changeUserData(params: newParams) { (response) in
+        changeUserPerformer.changeUserData(params: newParams) { (response) in
             switch response.result {
             case .success(let result):
                 print(result)
