@@ -52,6 +52,7 @@
 		D480467420F5962900E78A72 /* getGoodById.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466D20F590BF00E78A72 /* getGoodById.json */; };
 		D480467620F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */; };
 		D480467820F64B6D00E78A72 /* ProductsRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */; };
+		D480467F20F658B400E78A72 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = D480467E20F658B400E78A72 /* posts.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		D480466D20F590BF00E78A72 /* getGoodById.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getGoodById.json; sourceTree = "<group>"; };
 		D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestPerformerTests.swift; sourceTree = "<group>"; };
 		D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestPerformerTests.swift; sourceTree = "<group>"; };
+		D480467E20F658B400E78A72 /* posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
 		E4C84B3397E4649FA125EFEA /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0AEBF4C6BFCEB789C3D39 /* Pods-GBShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShopUITests/Pods-GBShopUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,9 +226,7 @@
 				D480465720F57DCD00E78A72 /* RequestFactoryMok.swift */,
 				D480465520F5741F00E78A72 /* ErrorParserStub.swift */,
 				D480465320F5730900E78A72 /* ResponseCodableTests.swift */,
-				D480466120F58D7C00E78A72 /* AuthRequestPerformerTests.swift */,
-				D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */,
-				D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */,
+				D480467920F6500A00E78A72 /* Network layer tests */,
 			);
 			path = GBShopTests;
 			sourceTree = "<group>";
@@ -402,8 +402,19 @@
 				D480466720F58FDF00E78A72 /* changeUserData.json */,
 				D480466B20F5906E00E78A72 /* catalogData.json */,
 				D480466D20F590BF00E78A72 /* getGoodById.json */,
+				D480467E20F658B400E78A72 /* posts.json */,
 			);
 			path = "File stubs";
+			sourceTree = "<group>";
+		};
+		D480467920F6500A00E78A72 /* Network layer tests */ = {
+			isa = PBXGroup;
+			children = (
+				D480466120F58D7C00E78A72 /* AuthRequestPerformerTests.swift */,
+				D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */,
+				D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */,
+			);
+			path = "Network layer tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,6 +530,7 @@
 				D480467420F5962900E78A72 /* getGoodById.json in Resources */,
 				D480467120F5962900E78A72 /* registerUser.json in Resources */,
 				D480467220F5962900E78A72 /* changeUserData.json in Resources */,
+				D480467F20F658B400E78A72 /* posts.json in Resources */,
 				D480467020F5962900E78A72 /* logout.json in Resources */,
 				D480467320F5962900E78A72 /* catalogData.json in Resources */,
 				D411D3BB20EAFB0B0040EB27 /* Assets.xcassets in Resources */,

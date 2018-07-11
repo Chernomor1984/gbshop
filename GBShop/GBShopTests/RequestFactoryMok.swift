@@ -38,4 +38,13 @@ class RequestFactoryMok {
         let errorParser = makeErrorParser()
         return ProductsRequestPerformer(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
     }
+    
+    func makePostStubRequestFactory() -> PostStubRequestFactory {
+        let errorParser = makeErrorParser()
+        let configurator = ResponseCodableTestsURLConfigurator()
+        return PostStubRequestPerformer(errorParser: errorParser,
+                                        sessionManager: sessionManager,
+                                        queue: sessionQueue,
+                                        urlConfigurator: configurator)
+    }
 }
