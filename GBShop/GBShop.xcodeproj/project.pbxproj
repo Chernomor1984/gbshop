@@ -53,6 +53,15 @@
 		D480467620F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */; };
 		D480467820F64B6D00E78A72 /* ProductsRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */; };
 		D480467F20F658B400E78A72 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = D480467E20F658B400E78A72 /* posts.json */; };
+		D4DC969E20F97C6D00B32844 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC969D20F97C6D00B32844 /* ReviewRequestFactory.swift */; };
+		D4DC96A020F97CB500B32844 /* AddReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC969F20F97CB500B32844 /* AddReviewResult.swift */; };
+		D4DC96A220F97DA600B32844 /* ApproveReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC96A120F97DA600B32844 /* ApproveReviewResult.swift */; };
+		D4DC96A420F97DF100B32844 /* RemoveReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC96A320F97DF100B32844 /* RemoveReviewResult.swift */; };
+		D4DC96A620F97FBC00B32844 /* ReviewRequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC96A520F97FBC00B32844 /* ReviewRequestPerformer.swift */; };
+		D4DC96A820F9852B00B32844 /* ReviewRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC96A720F9852B00B32844 /* ReviewRequestPerformerTests.swift */; };
+		D4DC96AA20F9857200B32844 /* addReview.json in Resources */ = {isa = PBXBuildFile; fileRef = D4DC96A920F9857200B32844 /* addReview.json */; };
+		D4DC96AC20F985E000B32844 /* approveReview.json in Resources */ = {isa = PBXBuildFile; fileRef = D4DC96AB20F985E000B32844 /* approveReview.json */; };
+		D4DC96AE20F9860D00B32844 /* removeReview.json in Resources */ = {isa = PBXBuildFile; fileRef = D4DC96AD20F9860D00B32844 /* removeReview.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +138,15 @@
 		D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestPerformerTests.swift; sourceTree = "<group>"; };
 		D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestPerformerTests.swift; sourceTree = "<group>"; };
 		D480467E20F658B400E78A72 /* posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		D4DC969D20F97C6D00B32844 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
+		D4DC969F20F97CB500B32844 /* AddReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewResult.swift; sourceTree = "<group>"; };
+		D4DC96A120F97DA600B32844 /* ApproveReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveReviewResult.swift; sourceTree = "<group>"; };
+		D4DC96A320F97DF100B32844 /* RemoveReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReviewResult.swift; sourceTree = "<group>"; };
+		D4DC96A520F97FBC00B32844 /* ReviewRequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestPerformer.swift; sourceTree = "<group>"; };
+		D4DC96A720F9852B00B32844 /* ReviewRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestPerformerTests.swift; sourceTree = "<group>"; };
+		D4DC96A920F9857200B32844 /* addReview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = addReview.json; sourceTree = "<group>"; };
+		D4DC96AB20F985E000B32844 /* approveReview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = approveReview.json; sourceTree = "<group>"; };
+		D4DC96AD20F9860D00B32844 /* removeReview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = removeReview.json; sourceTree = "<group>"; };
 		E4C84B3397E4649FA125EFEA /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0AEBF4C6BFCEB789C3D39 /* Pods-GBShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShopUITests/Pods-GBShopUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,6 +321,9 @@
 				D425360920EF0B0B00986A85 /* LogoutResult.swift */,
 				D480464D20F50D1C00E78A72 /* ProductList.swift */,
 				D480465120F56A2F00E78A72 /* Product.swift */,
+				D4DC969F20F97CB500B32844 /* AddReviewResult.swift */,
+				D4DC96A120F97DA600B32844 /* ApproveReviewResult.swift */,
+				D4DC96A320F97DF100B32844 /* RemoveReviewResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -344,6 +365,7 @@
 				D480464820F50A8700E78A72 /* Catalog */,
 				D42535FB20EF005E00986A85 /* Auth */,
 				D425360320EF074400986A85 /* ChangeUserData */,
+				D4DC969C20F97C3900B32844 /* Review */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -403,6 +425,9 @@
 				D480466B20F5906E00E78A72 /* catalogData.json */,
 				D480466D20F590BF00E78A72 /* getGoodById.json */,
 				D480467E20F658B400E78A72 /* posts.json */,
+				D4DC96A920F9857200B32844 /* addReview.json */,
+				D4DC96AB20F985E000B32844 /* approveReview.json */,
+				D4DC96AD20F9860D00B32844 /* removeReview.json */,
 			);
 			path = "File stubs";
 			sourceTree = "<group>";
@@ -413,8 +438,18 @@
 				D480466120F58D7C00E78A72 /* AuthRequestPerformerTests.swift */,
 				D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */,
 				D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */,
+				D4DC96A720F9852B00B32844 /* ReviewRequestPerformerTests.swift */,
 			);
 			path = "Network layer tests";
+			sourceTree = "<group>";
+		};
+		D4DC969C20F97C3900B32844 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				D4DC969D20F97C6D00B32844 /* ReviewRequestFactory.swift */,
+				D4DC96A520F97FBC00B32844 /* ReviewRequestPerformer.swift */,
+			);
+			path = Review;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,14 +561,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DC96AC20F985E000B32844 /* approveReview.json in Resources */,
 				D411D3BE20EAFB0B0040EB27 /* LaunchScreen.storyboard in Resources */,
 				D480467420F5962900E78A72 /* getGoodById.json in Resources */,
 				D480467120F5962900E78A72 /* registerUser.json in Resources */,
 				D480467220F5962900E78A72 /* changeUserData.json in Resources */,
+				D4DC96AE20F9860D00B32844 /* removeReview.json in Resources */,
 				D480467F20F658B400E78A72 /* posts.json in Resources */,
 				D480467020F5962900E78A72 /* logout.json in Resources */,
 				D480467320F5962900E78A72 /* catalogData.json in Resources */,
 				D411D3BB20EAFB0B0040EB27 /* Assets.xcassets in Resources */,
+				D4DC96AA20F9857200B32844 /* addReview.json in Resources */,
 				D480466F20F5962900E78A72 /* login.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,13 +674,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DC96A620F97FBC00B32844 /* ReviewRequestPerformer.swift in Sources */,
 				D480465D20F5848A00E78A72 /* StringUtils.swift in Sources */,
 				D480464420F2EDA400E78A72 /* URLConfiguration.swift in Sources */,
 				D42535F420EEFB2000986A85 /* RequestFactory.swift in Sources */,
 				D480464220F2ED0800E78A72 /* BaseURLConfigurator.swift in Sources */,
 				D411D3B420EAFB0B0040EB27 /* AppDelegate.swift in Sources */,
 				D425360020EF011200986A85 /* RegistrationParams.swift in Sources */,
+				D4DC96A020F97CB500B32844 /* AddReviewResult.swift in Sources */,
 				D42535EB20EEF67900986A85 /* LoginResult.swift in Sources */,
+				D4DC969E20F97C6D00B32844 /* ReviewRequestFactory.swift in Sources */,
 				D42535E520EEE85600986A85 /* DataRequestExtension.swift in Sources */,
 				D480465220F56A2F00E78A72 /* Product.swift in Sources */,
 				D42535E920EEF50200986A85 /* RequestRouter.swift in Sources */,
@@ -653,10 +694,12 @@
 				D42535F220EEF92400986A85 /* AuthRequestPerformer.swift in Sources */,
 				D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */,
 				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
+				D4DC96A220F97DA600B32844 /* ApproveReviewResult.swift in Sources */,
 				D425360520EF079B00986A85 /* ChangeUserDataRequestFactory.swift in Sources */,
 				D42535F620EEFF0200986A85 /* RegistrationResult.swift in Sources */,
 				D480464E20F50D1C00E78A72 /* ProductList.swift in Sources */,
 				D480464620F505F500E78A72 /* MethodNames.swift in Sources */,
+				D4DC96A420F97DF100B32844 /* RemoveReviewResult.swift in Sources */,
 				D425360720EF080B00986A85 /* ChangeUserDataRequestPerformer.swift in Sources */,
 				D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */,
 				D480464C20F50C2F00E78A72 /* ProductsRequestPerformer.swift in Sources */,
@@ -673,6 +716,7 @@
 				D480465A20F583C100E78A72 /* OHHTTPStubsResponseExtension.swift in Sources */,
 				D480465420F5730900E78A72 /* ResponseCodableTests.swift in Sources */,
 				D480467620F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift in Sources */,
+				D4DC96A820F9852B00B32844 /* ReviewRequestPerformerTests.swift in Sources */,
 				D480465620F5741F00E78A72 /* ErrorParserStub.swift in Sources */,
 				D480467820F64B6D00E78A72 /* ProductsRequestPerformerTests.swift in Sources */,
 				D480466220F58D7C00E78A72 /* AuthRequestPerformerTests.swift in Sources */,
