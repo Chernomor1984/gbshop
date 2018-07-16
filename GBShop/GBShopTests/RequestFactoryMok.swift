@@ -7,17 +7,18 @@
 //
 
 import Alamofire
+import OHHTTPStubs
+@testable import GBShop
 
-class RequestFactory {
+class RequestFactoryMok {
     
     func makeErrorParser() -> AbstractErrorParser {
-        return ErrorParser()
+        return ErrorParserStub()
     }
     
     lazy var sessionManager: SessionManager = {
-        let configuration = URLSessionConfiguration.default
-        configuration.httpShouldSetCookies = false
-        configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
+        let configuration = URLSessionConfiguration.ephemeral
+        OHHTTPStubs.isEnabled(for: configuration)
         return SessionManager(configuration: configuration)
     }()
     
@@ -36,5 +37,14 @@ class RequestFactory {
     func makeProductsRequestFactory() -> ProductsRequestFactory {
         let errorParser = makeErrorParser()
         return ProductsRequestPerformer(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
+    }
+    
+    func makePostStubRequestFactory() -> PostStubRequestFactory {
+        let errorParser = makeErrorParser()
+        let configurator = ResponseCodableTestsURLConfigurator()
+        return PostStubRequestPerformer(errorParser: errorParser,
+                                        sessionManager: sessionManager,
+                                        queue: sessionQueue,
+                                        urlConfigurator: configurator)
     }
 }

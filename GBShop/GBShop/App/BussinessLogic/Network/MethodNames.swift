@@ -13,8 +13,6 @@ enum MethodNames: String {
     case logout = "logout.json"
     case registerUser = "registerUser.json"
     case changeUserData = "changeUserData.json"
-    
-    var method: String {
-        return self.rawValue
-    }
+    case fetchProductsList = "catalogData.json"
+    case fetchProduct = "getGoodById.json"
 }
