@@ -47,4 +47,9 @@ class RequestFactoryMok {
                                         queue: sessionQueue,
                                         urlConfigurator: configurator)
     }
+    
+    func makeReviewRequestFactory() -> ReviewRequestFactory {
+        let errorParser = makeErrorParser()
+        return ReviewRequestPerformer(errorParser: errorParser, sessionManager: sessionManager, queue: sessionQueue)
+    }
 }

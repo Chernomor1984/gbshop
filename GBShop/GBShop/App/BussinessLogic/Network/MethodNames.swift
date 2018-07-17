@@ -15,4 +15,7 @@ enum MethodNames: String {
     case changeUserData = "changeUserData.json"
     case fetchProductsList = "catalogData.json"
     case fetchProduct = "getGoodById.json"
+    case addReview = "addReview.json"
+    case approveReview = "approveReview.json"
+    case removeReview = "removeReview.json"
 }
