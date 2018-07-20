@@ -18,4 +18,7 @@ enum MethodNames: String {
     case addReview = "addReview.json"
     case approveReview = "approveReview.json"
     case removeReview = "removeReview.json"
+    case addToBasket = "addToBasket.json"
+    case removeFromBasket = "deleteFromBasket.json"
+    case fetchUserBasket = "getBasket.json"
 }
