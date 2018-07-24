@@ -63,6 +63,11 @@
 		D4CEEC9321016906009B70B4 /* addToBasket.json in Resources */ = {isa = PBXBuildFile; fileRef = D4CEEC9221016906009B70B4 /* addToBasket.json */; };
 		D4CEEC952101691D009B70B4 /* deleteFromBasket.json in Resources */ = {isa = PBXBuildFile; fileRef = D4CEEC942101691D009B70B4 /* deleteFromBasket.json */; };
 		D4CEEC9721016948009B70B4 /* getBasket.json in Resources */ = {isa = PBXBuildFile; fileRef = D4CEEC9621016948009B70B4 /* getBasket.json */; };
+		D4CEECC821069D37009B70B4 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECC721069D37009B70B4 /* AuthViewController.swift */; };
+		D4CEECCB21069F0A009B70B4 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CEECCA21069F0A009B70B4 /* Auth.storyboard */; };
+		D4CEECCD2106A38F009B70B4 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECCC2106A38F009B70B4 /* UIFactory.swift */; };
+		D4CEECCF2106B0DD009B70B4 /* StoryboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECCE2106B0DD009B70B4 /* StoryboardUtils.swift */; };
+		D4CEECD12106B908009B70B4 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECD02106B908009B70B4 /* ViewControllerExtension.swift */; };
 		D4DC969E20F97C6D00B32844 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC969D20F97C6D00B32844 /* ReviewRequestFactory.swift */; };
 		D4DC96A020F97CB500B32844 /* AddReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC969F20F97CB500B32844 /* AddReviewResult.swift */; };
 		D4DC96A220F97DA600B32844 /* ApproveReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC96A120F97DA600B32844 /* ApproveReviewResult.swift */; };
@@ -158,6 +163,11 @@
 		D4CEEC9221016906009B70B4 /* addToBasket.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = addToBasket.json; sourceTree = "<group>"; };
 		D4CEEC942101691D009B70B4 /* deleteFromBasket.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = deleteFromBasket.json; sourceTree = "<group>"; };
 		D4CEEC9621016948009B70B4 /* getBasket.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getBasket.json; sourceTree = "<group>"; };
+		D4CEECC721069D37009B70B4 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		D4CEECCA21069F0A009B70B4 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		D4CEECCC2106A38F009B70B4 /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
+		D4CEECCE2106B0DD009B70B4 /* StoryboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardUtils.swift; sourceTree = "<group>"; };
+		D4CEECD02106B908009B70B4 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		D4DC969D20F97C6D00B32844 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
 		D4DC969F20F97CB500B32844 /* AddReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewResult.swift; sourceTree = "<group>"; };
 		D4DC96A120F97DA600B32844 /* ApproveReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveReviewResult.swift; sourceTree = "<group>"; };
@@ -291,6 +301,7 @@
 		D411D3E220EB000C0040EB27 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				D4CEECC921069EE7009B70B4 /* Auth */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -298,6 +309,8 @@
 		D411D3E320EB001C0040EB27 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D4CEECD02106B908009B70B4 /* ViewControllerExtension.swift */,
+				D480465B20F5847100E78A72 /* Utils */,
 				D42535DF20EEE78800986A85 /* Network */,
 			);
 			path = Core;
@@ -324,7 +337,6 @@
 		D411D3E820EB01F90040EB27 /* BussinessLogic */ = {
 			isa = PBXGroup;
 			children = (
-				D480465B20F5847100E78A72 /* Utils */,
 				D42535EE20EEF6DC00986A85 /* Network */,
 				D411D3EB20EB024D0040EB27 /* AppDelegate */,
 			);
@@ -356,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				D42535F320EEFB2000986A85 /* RequestFactory.swift */,
+				D4CEECCC2106A38F009B70B4 /* UIFactory.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -436,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				D480465C20F5848A00E78A72 /* StringUtils.swift */,
+				D4CEECCE2106B0DD009B70B4 /* StoryboardUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -479,6 +493,15 @@
 				D4CEEC8E2101596C009B70B4 /* BasketRequestPerformer.swift */,
 			);
 			path = Basket;
+			sourceTree = "<group>";
+		};
+		D4CEECC921069EE7009B70B4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEECCA21069F0A009B70B4 /* Auth.storyboard */,
+				D4CEECC721069D37009B70B4 /* AuthViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		D4DC969C20F97C3900B32844 /* Review */ = {
@@ -607,6 +630,7 @@
 				D4CEEC9721016948009B70B4 /* getBasket.json in Resources */,
 				D480467120F5962900E78A72 /* registerUser.json in Resources */,
 				D480467220F5962900E78A72 /* changeUserData.json in Resources */,
+				D4CEECCB21069F0A009B70B4 /* Auth.storyboard in Resources */,
 				D4DC96AE20F9860D00B32844 /* removeReview.json in Resources */,
 				D480467F20F658B400E78A72 /* posts.json in Resources */,
 				D480467020F5962900E78A72 /* logout.json in Resources */,
@@ -720,6 +744,7 @@
 				D4CEEC8B21015567009B70B4 /* UserBasketResult.swift in Sources */,
 				D480465D20F5848A00E78A72 /* StringUtils.swift in Sources */,
 				D480464420F2EDA400E78A72 /* URLConfiguration.swift in Sources */,
+				D4CEECCD2106A38F009B70B4 /* UIFactory.swift in Sources */,
 				D42535F420EEFB2000986A85 /* RequestFactory.swift in Sources */,
 				D4CEEC8F2101596C009B70B4 /* BasketRequestPerformer.swift in Sources */,
 				D480464220F2ED0800E78A72 /* BaseURLConfigurator.swift in Sources */,
@@ -740,14 +765,17 @@
 				D42535F220EEF92400986A85 /* AuthRequestPerformer.swift in Sources */,
 				D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */,
 				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
+				D4CEECCF2106B0DD009B70B4 /* StoryboardUtils.swift in Sources */,
 				D4DC96A220F97DA600B32844 /* ApproveReviewResult.swift in Sources */,
 				D425360520EF079B00986A85 /* ChangeUserDataRequestFactory.swift in Sources */,
 				D42535F620EEFF0200986A85 /* RegistrationResult.swift in Sources */,
 				D480464E20F50D1C00E78A72 /* ProductList.swift in Sources */,
 				D480464620F505F500E78A72 /* MethodNames.swift in Sources */,
+				D4CEECD12106B908009B70B4 /* ViewControllerExtension.swift in Sources */,
 				D4DC96A420F97DF100B32844 /* RemoveReviewResult.swift in Sources */,
 				D425360720EF080B00986A85 /* ChangeUserDataRequestPerformer.swift in Sources */,
 				D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */,
+				D4CEECC821069D37009B70B4 /* AuthViewController.swift in Sources */,
 				D480464C20F50C2F00E78A72 /* ProductsRequestPerformer.swift in Sources */,
 				D425360A20EF0B0B00986A85 /* LogoutResult.swift in Sources */,
 				D4CEEC892101551C009B70B4 /* RemoveFromBasketResult.swift in Sources */,
