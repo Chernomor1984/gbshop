@@ -9,16 +9,13 @@
 import UIKit
 
 extension UIStoryboard {
-    class func loadStoryboard(name: String, bundle: Bundle? = nil) -> UIStoryboard {
-        return UIStoryboard(name: name, bundle: bundle)
-    }
-    
-    func name(of type: AnyClass) -> String {
+    class func identifier(of type: AnyClass) -> String {
         return String(describing: type)
     }
     
-    func loadController(with identifier: String) -> UIViewController {
-        return self.instantiateViewController(withIdentifier: identifier)
+    class func loadController(identifier: String, storyboardName: String, bundle: Bundle? = nil) -> UIViewController {
+        let storyBoard = UIStoryboard(name: storyboardName, bundle: bundle)
+        return storyBoard.instantiateViewController(withIdentifier: identifier)
     }
 }
 

@@ -21,9 +21,8 @@ class AuthViewController: UIViewController {
     // MARK: - Init
     
     class func createAuthViewController(authRequestFactory: AuthRequestFactory) -> AuthViewController {
-        let storyBoard = UIStoryboard.loadStoryboard(name: storyboardName)
-        let identifier = storyBoard.name(of: AuthViewController.self)
-        let authController = storyBoard.loadController(with: identifier) as! AuthViewController
+        let identifier = UIStoryboard.identifier(of: AuthViewController.self)
+        let authController = UIStoryboard.loadController(identifier: identifier, storyboardName: storyboardName) as! AuthViewController
         authController.authRequestFactory = authRequestFactory
         
         return authController
