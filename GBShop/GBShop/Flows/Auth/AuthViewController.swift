@@ -13,6 +13,13 @@ class AuthViewController: UIViewController {
         return view as! AuthViewProtocol
     }
     
+    var actionHandler: AuthActionHandling? {
+        didSet {
+            actionHandler?.view = mainView
+            actionHandler?.addActions()
+        }
+    }
+    
     // MARK: - Life cycle
     
     override func viewDidLoad() {

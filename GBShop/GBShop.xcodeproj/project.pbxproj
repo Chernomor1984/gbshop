@@ -53,6 +53,8 @@
 		D480467620F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */; };
 		D480467820F64B6D00E78A72 /* ProductsRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */; };
 		D480467F20F658B400E78A72 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = D480467E20F658B400E78A72 /* posts.json */; };
+		D4C46FD3210AB35F00351D99 /* AuthActionHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C46FD2210AB35F00351D99 /* AuthActionHandling.swift */; };
+		D4C46FD5210AB51900351D99 /* AuthActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C46FD4210AB51900351D99 /* AuthActionHandler.swift */; };
 		D4CEEC85210153E2009B70B4 /* BasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEEC84210153E2009B70B4 /* BasketRequestFactory.swift */; };
 		D4CEEC87210154B6009B70B4 /* AddToBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEEC86210154B6009B70B4 /* AddToBasketResult.swift */; };
 		D4CEEC892101551C009B70B4 /* RemoveFromBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEEC882101551C009B70B4 /* RemoveFromBasketResult.swift */; };
@@ -158,6 +160,8 @@
 		D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestPerformerTests.swift; sourceTree = "<group>"; };
 		D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestPerformerTests.swift; sourceTree = "<group>"; };
 		D480467E20F658B400E78A72 /* posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		D4C46FD2210AB35F00351D99 /* AuthActionHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActionHandling.swift; sourceTree = "<group>"; };
+		D4C46FD4210AB51900351D99 /* AuthActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActionHandler.swift; sourceTree = "<group>"; };
 		D4CEEC84210153E2009B70B4 /* BasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketRequestFactory.swift; sourceTree = "<group>"; };
 		D4CEEC86210154B6009B70B4 /* AddToBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketResult.swift; sourceTree = "<group>"; };
 		D4CEEC882101551C009B70B4 /* RemoveFromBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFromBasketResult.swift; sourceTree = "<group>"; };
@@ -512,6 +516,7 @@
 				D4CEECC721069D37009B70B4 /* AuthViewController.swift */,
 				D4CEED29210A827D009B70B4 /* AuthView.swift */,
 				D4CEED2B210A83C7009B70B4 /* AuthViewConfigurator.swift */,
+				D4C46FD4210AB51900351D99 /* AuthActionHandler.swift */,
 				D4CEED2F210A8B01009B70B4 /* AuthModuleBuilder.swift */,
 				D4CEED31210A9223009B70B4 /* Protocolos */,
 			);
@@ -523,6 +528,7 @@
 			children = (
 				D4CEED25210A7773009B70B4 /* AuthViewProtocol.swift */,
 				D4CEED27210A7EF4009B70B4 /* AuthViewConfiguration.swift */,
+				D4C46FD2210AB35F00351D99 /* AuthActionHandling.swift */,
 			);
 			path = Protocolos;
 			sourceTree = "<group>";
@@ -778,6 +784,7 @@
 				D42535EB20EEF67900986A85 /* LoginResult.swift in Sources */,
 				D4DC969E20F97C6D00B32844 /* ReviewRequestFactory.swift in Sources */,
 				D42535E520EEE85600986A85 /* DataRequestExtension.swift in Sources */,
+				D4C46FD5210AB51900351D99 /* AuthActionHandler.swift in Sources */,
 				D480465220F56A2F00E78A72 /* Product.swift in Sources */,
 				D42535E920EEF50200986A85 /* RequestRouter.swift in Sources */,
 				D480464A20F50AB700E78A72 /* ProductsRequestFactory.swift in Sources */,
@@ -801,6 +808,7 @@
 				D4CEECD12106B908009B70B4 /* ViewControllerExtension.swift in Sources */,
 				D4DC96A420F97DF100B32844 /* RemoveReviewResult.swift in Sources */,
 				D425360720EF080B00986A85 /* ChangeUserDataRequestPerformer.swift in Sources */,
+				D4C46FD3210AB35F00351D99 /* AuthActionHandling.swift in Sources */,
 				D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */,
 				D4CEECC821069D37009B70B4 /* AuthViewController.swift in Sources */,
 				D480464C20F50C2F00E78A72 /* ProductsRequestPerformer.swift in Sources */,

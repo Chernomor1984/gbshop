@@ -10,9 +10,9 @@ import UIKit
 
 class AuthModuleBuilder: ModuleBuilder {
     @IBOutlet weak var authViewController: AuthViewController!
-    private let viewConfigurator = AuthViewConfigurator()
     
     override func configure() {
-        authViewController.mainView.configurator = viewConfigurator
+        authViewController.mainView.configurator = AuthViewConfigurator()
+        authViewController.actionHandler = AuthActionHandler()
     }
 }
