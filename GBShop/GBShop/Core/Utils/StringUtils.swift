@@ -26,4 +26,8 @@ extension String {
         }
         return String(substring)
     }
+    
+    static func identifier(of type: AnyClass) -> String {
+        return String(describing: type)
+    }
 }

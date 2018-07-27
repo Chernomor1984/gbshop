@@ -9,30 +9,24 @@
 import UIKit
 
 class AuthViewController: UIViewController {
-    private static let storyboardName = "Auth"
-    
-    @IBOutlet weak var loginTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var authButton: UIButton!
-    @IBOutlet weak var registerButton: UIButton!
-    
-    var authRequestFactory: AuthRequestFactory!
-    
-    // MARK: - Init
-    
-    class func createAuthViewController(authRequestFactory: AuthRequestFactory) -> AuthViewController {
-        let identifier = UIStoryboard.identifier(of: AuthViewController.self)
-        let authController = UIStoryboard.loadController(identifier: identifier, storyboardName: storyboardName) as! AuthViewController
-        authController.authRequestFactory = authRequestFactory
-        
-        return authController
+    var mainView: AuthViewProtocol {
+        return view as! AuthViewProtocol
     }
     
-    // MARK: - Actions
+    var actionHandler: AuthActionHandling? {
+        didSet {
+            actionHandler?.view = mainView
+            actionHandler?.addActions()
+        }
+    }
     
-    @IBAction func authButtonTapHandler(sender: UIButton) {}
-    
-    @IBAction func registerButtonTapHandler(sender: UIButton) {}
+    var router: AuthRouting? {
+        didSet {
+            router?.viewController = self
+            actionHandler?.loginButtonTapHandler = router?.loginButtonTapHandler
+            actionHandler?.registerButtonTapHandler = router?.registerButtonTapHandler
+        }
+    }
     
     // MARK: - Life cycle
     

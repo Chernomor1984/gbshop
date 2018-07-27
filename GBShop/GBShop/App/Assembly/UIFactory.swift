@@ -9,10 +9,24 @@
 import UIKit
 
 class UIFactory {
+    
+    private struct Const {
+        static let authStoryboardName = "Auth"
+    }
+    
     private let requestFactory = RequestFactory()
     
-    func makeAuthViewController() -> AuthViewController {
-        let authRequestFactory = requestFactory.makeAuthRequestFactory()
-        return AuthViewController.createAuthViewController(authRequestFactory: authRequestFactory)
+    // MARK: - Public
+    
+    func loadAuthViewController() -> UIViewController {
+        return self.loadViewController(storyboardName: Const.authStoryboardName,
+                                       identifier: String.identifier(of: AuthViewController.self))
+    }
+    
+    // MARK: - Private
+    
+    private func loadViewController(storyboardName: String, identifier: String, bundle: Bundle? = nil) -> UIViewController {
+        let storyBoard = UIStoryboard(name: storyboardName, bundle: bundle)
+        return storyBoard.instantiateViewController(withIdentifier: identifier)
     }
 }
