@@ -20,6 +20,14 @@ class AuthViewController: UIViewController {
         }
     }
     
+    var router: AuthRouting? {
+        didSet {
+            router?.viewController = self
+            actionHandler?.loginButtonTapHandler = router?.loginButtonTapHandler
+            actionHandler?.registerButtonTapHandler = router?.registerButtonTapHandler
+        }
+    }
+    
     // MARK: - Life cycle
     
     override func viewDidLoad() {

@@ -26,14 +26,12 @@ class AuthActionHandler: AuthActionHandling {
     @objc
     private func didTapLoginButton(sender: UIButton) {
         // TODO: add textfield validation
-        print("didTapLoginButton")
         loginButtonTapHandler?()
     }
     
     @objc
     private func didTapRegisterButton(sender: UIButton) {
         // TODO: add textfield validation
-        print("didTapRegisterButton")
         registerButtonTapHandler?()
     }
 }
