@@ -66,8 +66,13 @@
 		D4CEECC821069D37009B70B4 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECC721069D37009B70B4 /* AuthViewController.swift */; };
 		D4CEECCB21069F0A009B70B4 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CEECCA21069F0A009B70B4 /* Auth.storyboard */; };
 		D4CEECCD2106A38F009B70B4 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECCC2106A38F009B70B4 /* UIFactory.swift */; };
-		D4CEECCF2106B0DD009B70B4 /* StoryboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECCE2106B0DD009B70B4 /* StoryboardUtils.swift */; };
 		D4CEECD12106B908009B70B4 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECD02106B908009B70B4 /* ViewControllerExtension.swift */; };
+		D4CEED26210A7773009B70B4 /* AuthViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEED25210A7773009B70B4 /* AuthViewProtocol.swift */; };
+		D4CEED28210A7EF4009B70B4 /* AuthViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEED27210A7EF4009B70B4 /* AuthViewConfiguration.swift */; };
+		D4CEED2A210A827D009B70B4 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEED29210A827D009B70B4 /* AuthView.swift */; };
+		D4CEED2C210A83C7009B70B4 /* AuthViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEED2B210A83C7009B70B4 /* AuthViewConfigurator.swift */; };
+		D4CEED2E210A8853009B70B4 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEED2D210A8853009B70B4 /* ModuleBuilder.swift */; };
+		D4CEED30210A8B01009B70B4 /* AuthModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEED2F210A8B01009B70B4 /* AuthModuleBuilder.swift */; };
 		D4DC969E20F97C6D00B32844 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC969D20F97C6D00B32844 /* ReviewRequestFactory.swift */; };
 		D4DC96A020F97CB500B32844 /* AddReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC969F20F97CB500B32844 /* AddReviewResult.swift */; };
 		D4DC96A220F97DA600B32844 /* ApproveReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC96A120F97DA600B32844 /* ApproveReviewResult.swift */; };
@@ -166,8 +171,13 @@
 		D4CEECC721069D37009B70B4 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		D4CEECCA21069F0A009B70B4 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		D4CEECCC2106A38F009B70B4 /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
-		D4CEECCE2106B0DD009B70B4 /* StoryboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardUtils.swift; sourceTree = "<group>"; };
 		D4CEECD02106B908009B70B4 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		D4CEED25210A7773009B70B4 /* AuthViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewProtocol.swift; sourceTree = "<group>"; };
+		D4CEED27210A7EF4009B70B4 /* AuthViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewConfiguration.swift; sourceTree = "<group>"; };
+		D4CEED29210A827D009B70B4 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		D4CEED2B210A83C7009B70B4 /* AuthViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewConfigurator.swift; sourceTree = "<group>"; };
+		D4CEED2D210A8853009B70B4 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		D4CEED2F210A8B01009B70B4 /* AuthModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModuleBuilder.swift; sourceTree = "<group>"; };
 		D4DC969D20F97C6D00B32844 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
 		D4DC969F20F97CB500B32844 /* AddReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewResult.swift; sourceTree = "<group>"; };
 		D4DC96A120F97DA600B32844 /* ApproveReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveReviewResult.swift; sourceTree = "<group>"; };
@@ -369,6 +379,7 @@
 			children = (
 				D42535F320EEFB2000986A85 /* RequestFactory.swift */,
 				D4CEECCC2106A38F009B70B4 /* UIFactory.swift */,
+				D4CEED2D210A8853009B70B4 /* ModuleBuilder.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -449,7 +460,6 @@
 			isa = PBXGroup;
 			children = (
 				D480465C20F5848A00E78A72 /* StringUtils.swift */,
-				D4CEECCE2106B0DD009B70B4 /* StoryboardUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -500,8 +510,21 @@
 			children = (
 				D4CEECCA21069F0A009B70B4 /* Auth.storyboard */,
 				D4CEECC721069D37009B70B4 /* AuthViewController.swift */,
+				D4CEED29210A827D009B70B4 /* AuthView.swift */,
+				D4CEED2B210A83C7009B70B4 /* AuthViewConfigurator.swift */,
+				D4CEED2F210A8B01009B70B4 /* AuthModuleBuilder.swift */,
+				D4CEED31210A9223009B70B4 /* Protocolos */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		D4CEED31210A9223009B70B4 /* Protocolos */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEED25210A7773009B70B4 /* AuthViewProtocol.swift */,
+				D4CEED27210A7EF4009B70B4 /* AuthViewConfiguration.swift */,
+			);
+			path = Protocolos;
 			sourceTree = "<group>";
 		};
 		D4DC969C20F97C3900B32844 /* Review */ = {
@@ -747,6 +770,7 @@
 				D4CEECCD2106A38F009B70B4 /* UIFactory.swift in Sources */,
 				D42535F420EEFB2000986A85 /* RequestFactory.swift in Sources */,
 				D4CEEC8F2101596C009B70B4 /* BasketRequestPerformer.swift in Sources */,
+				D4CEED28210A7EF4009B70B4 /* AuthViewConfiguration.swift in Sources */,
 				D480464220F2ED0800E78A72 /* BaseURLConfigurator.swift in Sources */,
 				D411D3B420EAFB0B0040EB27 /* AppDelegate.swift in Sources */,
 				D425360020EF011200986A85 /* RegistrationParams.swift in Sources */,
@@ -764,13 +788,16 @@
 				D42535ED20EEF69700986A85 /* User.swift in Sources */,
 				D42535F220EEF92400986A85 /* AuthRequestPerformer.swift in Sources */,
 				D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */,
+				D4CEED2E210A8853009B70B4 /* ModuleBuilder.swift in Sources */,
 				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
-				D4CEECCF2106B0DD009B70B4 /* StoryboardUtils.swift in Sources */,
+				D4CEED2C210A83C7009B70B4 /* AuthViewConfigurator.swift in Sources */,
 				D4DC96A220F97DA600B32844 /* ApproveReviewResult.swift in Sources */,
 				D425360520EF079B00986A85 /* ChangeUserDataRequestFactory.swift in Sources */,
 				D42535F620EEFF0200986A85 /* RegistrationResult.swift in Sources */,
+				D4CEED26210A7773009B70B4 /* AuthViewProtocol.swift in Sources */,
 				D480464E20F50D1C00E78A72 /* ProductList.swift in Sources */,
 				D480464620F505F500E78A72 /* MethodNames.swift in Sources */,
+				D4CEED30210A8B01009B70B4 /* AuthModuleBuilder.swift in Sources */,
 				D4CEECD12106B908009B70B4 /* ViewControllerExtension.swift in Sources */,
 				D4DC96A420F97DF100B32844 /* RemoveReviewResult.swift in Sources */,
 				D425360720EF080B00986A85 /* ChangeUserDataRequestPerformer.swift in Sources */,
@@ -779,6 +806,7 @@
 				D480464C20F50C2F00E78A72 /* ProductsRequestPerformer.swift in Sources */,
 				D425360A20EF0B0B00986A85 /* LogoutResult.swift in Sources */,
 				D4CEEC892101551C009B70B4 /* RemoveFromBasketResult.swift in Sources */,
+				D4CEED2A210A827D009B70B4 /* AuthView.swift in Sources */,
 				D42535E720EEF04C00986A85 /* AbstractRequestFaсtory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
