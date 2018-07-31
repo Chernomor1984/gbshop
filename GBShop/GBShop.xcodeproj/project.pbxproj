@@ -42,7 +42,7 @@
 		D480465620F5741F00E78A72 /* ErrorParserStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465520F5741F00E78A72 /* ErrorParserStub.swift */; };
 		D480465820F57DCD00E78A72 /* RequestFactoryMok.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465720F57DCD00E78A72 /* RequestFactoryMok.swift */; };
 		D480465A20F583C100E78A72 /* OHHTTPStubsResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465920F583C100E78A72 /* OHHTTPStubsResponseExtension.swift */; };
-		D480465D20F5848A00E78A72 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465C20F5848A00E78A72 /* StringUtils.swift */; };
+		D480465D20F5848A00E78A72 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465C20F5848A00E78A72 /* String.swift */; };
 		D480466220F58D7C00E78A72 /* AuthRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480466120F58D7C00E78A72 /* AuthRequestPerformerTests.swift */; };
 		D480466F20F5962900E78A72 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466320F58F6C00E78A72 /* login.json */; };
 		D480467020F5962900E78A72 /* logout.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466520F58F9700E78A72 /* logout.json */; };
@@ -86,6 +86,11 @@
 		D4DC96AA20F9857200B32844 /* addReview.json in Resources */ = {isa = PBXBuildFile; fileRef = D4DC96A920F9857200B32844 /* addReview.json */; };
 		D4DC96AC20F985E000B32844 /* approveReview.json in Resources */ = {isa = PBXBuildFile; fileRef = D4DC96AB20F985E000B32844 /* approveReview.json */; };
 		D4DC96AE20F9860D00B32844 /* removeReview.json in Resources */ = {isa = PBXBuildFile; fileRef = D4DC96AD20F9860D00B32844 /* removeReview.json */; };
+		D4E1F041210FF31B000FAF5C /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F040210FF31B000FAF5C /* Validatable.swift */; };
+		D4E1F043210FF390000FAF5C /* Evaluatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F042210FF390000FAF5C /* Evaluatable.swift */; };
+		D4E1F045210FF455000FAF5C /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F044210FF455000FAF5C /* UITextField.swift */; };
+		D4E1F04B21100D45000FAF5C /* TextFieldValidating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F04A21100D45000FAF5C /* TextFieldValidating.swift */; };
+		D4E1F04D21101572000FAF5C /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F04C21101572000FAF5C /* TextFieldValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,7 +156,7 @@
 		D480465520F5741F00E78A72 /* ErrorParserStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParserStub.swift; sourceTree = "<group>"; };
 		D480465720F57DCD00E78A72 /* RequestFactoryMok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryMok.swift; sourceTree = "<group>"; };
 		D480465920F583C100E78A72 /* OHHTTPStubsResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHHTTPStubsResponseExtension.swift; sourceTree = "<group>"; };
-		D480465C20F5848A00E78A72 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		D480465C20F5848A00E78A72 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		D480466120F58D7C00E78A72 /* AuthRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestPerformerTests.swift; sourceTree = "<group>"; };
 		D480466320F58F6C00E78A72 /* login.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
 		D480466520F58F9700E78A72 /* logout.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = logout.json; sourceTree = "<group>"; };
@@ -195,6 +200,11 @@
 		D4DC96A920F9857200B32844 /* addReview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = addReview.json; sourceTree = "<group>"; };
 		D4DC96AB20F985E000B32844 /* approveReview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = approveReview.json; sourceTree = "<group>"; };
 		D4DC96AD20F9860D00B32844 /* removeReview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = removeReview.json; sourceTree = "<group>"; };
+		D4E1F040210FF31B000FAF5C /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		D4E1F042210FF390000FAF5C /* Evaluatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluatable.swift; sourceTree = "<group>"; };
+		D4E1F044210FF455000FAF5C /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		D4E1F04A21100D45000FAF5C /* TextFieldValidating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidating.swift; sourceTree = "<group>"; };
+		D4E1F04C21101572000FAF5C /* TextFieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidator.swift; sourceTree = "<group>"; };
 		E4C84B3397E4649FA125EFEA /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0AEBF4C6BFCEB789C3D39 /* Pods-GBShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShopUITests/Pods-GBShopUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -328,7 +338,9 @@
 			isa = PBXGroup;
 			children = (
 				D4CEECD02106B908009B70B4 /* ViewControllerExtension.swift */,
-				D480465B20F5847100E78A72 /* Utils */,
+				D4E1F04C21101572000FAF5C /* TextFieldValidator.swift */,
+				D4E1F03F210FF2FF000FAF5C /* Protocols */,
+				D480465B20F5847100E78A72 /* Extensions */,
 				D42535DF20EEE78800986A85 /* Network */,
 			);
 			path = Core;
@@ -464,12 +476,13 @@
 			path = Catalog;
 			sourceTree = "<group>";
 		};
-		D480465B20F5847100E78A72 /* Utils */ = {
+		D480465B20F5847100E78A72 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D480465C20F5848A00E78A72 /* StringUtils.swift */,
+				D480465C20F5848A00E78A72 /* String.swift */,
+				D4E1F044210FF455000FAF5C /* UITextField.swift */,
 			);
-			path = Utils;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D480465E20F5874D00E78A72 /* File stubs */ = {
@@ -546,6 +559,16 @@
 				D4DC96A520F97FBC00B32844 /* ReviewRequestPerformer.swift */,
 			);
 			path = Review;
+			sourceTree = "<group>";
+		};
+		D4E1F03F210FF2FF000FAF5C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D4E1F040210FF31B000FAF5C /* Validatable.swift */,
+				D4E1F042210FF390000FAF5C /* Evaluatable.swift */,
+				D4E1F04A21100D45000FAF5C /* TextFieldValidating.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -775,9 +798,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4DC96A620F97FBC00B32844 /* ReviewRequestPerformer.swift in Sources */,
+				D4E1F041210FF31B000FAF5C /* Validatable.swift in Sources */,
 				D4CEEC87210154B6009B70B4 /* AddToBasketResult.swift in Sources */,
 				D4CEEC8B21015567009B70B4 /* UserBasketResult.swift in Sources */,
-				D480465D20F5848A00E78A72 /* StringUtils.swift in Sources */,
+				D480465D20F5848A00E78A72 /* String.swift in Sources */,
 				D480464420F2EDA400E78A72 /* URLConfiguration.swift in Sources */,
 				D4CEECCD2106A38F009B70B4 /* UIFactory.swift in Sources */,
 				D42535F420EEFB2000986A85 /* RequestFactory.swift in Sources */,
@@ -791,9 +815,11 @@
 				D4DC969E20F97C6D00B32844 /* ReviewRequestFactory.swift in Sources */,
 				D42535E520EEE85600986A85 /* DataRequestExtension.swift in Sources */,
 				D4C46FD5210AB51900351D99 /* AuthActionHandler.swift in Sources */,
+				D4E1F043210FF390000FAF5C /* Evaluatable.swift in Sources */,
 				D480465220F56A2F00E78A72 /* Product.swift in Sources */,
 				D42535E920EEF50200986A85 /* RequestRouter.swift in Sources */,
 				D480464A20F50AB700E78A72 /* ProductsRequestFactory.swift in Sources */,
+				D4E1F045210FF455000FAF5C /* UITextField.swift in Sources */,
 				D425360220EF06DF00986A85 /* ChangeUserDataResult.swift in Sources */,
 				D42535F820EEFFA200986A85 /* BaseRequestPerformer.swift in Sources */,
 				D4C46FD9210ABC7E00351D99 /* AuthRouter.swift in Sources */,
@@ -805,6 +831,8 @@
 				D4CEED2E210A8853009B70B4 /* ModuleBuilder.swift in Sources */,
 				D4C46FD7210ABAB200351D99 /* AuthRouting.swift in Sources */,
 				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
+				D4E1F04B21100D45000FAF5C /* TextFieldValidating.swift in Sources */,
+				D4E1F04D21101572000FAF5C /* TextFieldValidator.swift in Sources */,
 				D4CEED2C210A83C7009B70B4 /* AuthViewConfigurator.swift in Sources */,
 				D4DC96A220F97DA600B32844 /* ApproveReviewResult.swift in Sources */,
 				D425360520EF079B00986A85 /* ChangeUserDataRequestFactory.swift in Sources */,

@@ -25,8 +25,11 @@ class AuthViewController: UIViewController {
             router?.viewController = self
             actionHandler?.loginButtonTapHandler = router?.loginButtonTapHandler
             actionHandler?.registerButtonTapHandler = router?.registerButtonTapHandler
+            actionHandler?.validationFailed = validationFailed
         }
     }
+    
+    private var validationFailed: AuthActionHandling.ValidationFailureClosure?
     
     // MARK: - Life cycle
     
@@ -34,5 +37,9 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
         
         addEndEditingTapHandler()
+        
+        validationFailed = { textField in
+            textField?.becomeFirstResponder()
+        }
     }
 }

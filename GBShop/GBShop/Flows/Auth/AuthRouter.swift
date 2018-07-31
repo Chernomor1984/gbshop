@@ -9,7 +9,7 @@
 import UIKit
 
 class AuthRouter: AuthRouting {
-    var viewController: UIViewController?
+    weak var viewController: UIViewController?
     
     var loginButtonTapHandler: AuthRouting.LoginButtonTapHandlerClosure? = {
     }
