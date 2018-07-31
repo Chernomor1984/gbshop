@@ -23,6 +23,7 @@ class AuthViewConfigurator: AuthViewConfiguration {
     
     func configureLoginTextField() {
         authView?.loginTextField.placeholder = Const.loginTextFieldPlaceholder
+        authView?.loginTextField.validateFunctions = [isLoginTextFiledValid]
     }
     
     func configurePasswordTextField() {
@@ -35,5 +36,15 @@ class AuthViewConfigurator: AuthViewConfiguration {
     
     func configureRegistrationButton() {
         authView?.registerButton.setTitle(Const.registrationButtonTitle, for: .normal)
+    }
+    
+    // MARK: - Private
+    
+    private func isLoginTextFiledValid(text: String) -> Bool {
+        return false
+    }
+    
+    private func isPasswordTextFieldValid(text: String) -> Bool {
+        return false
     }
 }

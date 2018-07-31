@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+extension String: Evaluatable {
     func fileName(separator: Character) -> String? {
         let array = self.split(separator: separator)
         
@@ -29,5 +29,17 @@ extension String {
     
     static func identifier(of type: AnyClass) -> String {
         return String(describing: type)
+    }
+    
+    // MARK: - Evaluatable
+    
+    typealias T = String
+    
+    func evaluate(with condition: T) -> Bool {
+        guard let range = range(of: condition, options: .regularExpression, range: nil, locale: .current) else {
+            return false
+        }
+        
+        return range.lowerBound == startIndex && range.upperBound == endIndex
     }
 }
