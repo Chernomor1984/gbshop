@@ -8,6 +8,11 @@
 
 import Foundation
 
+/**
+ Идея взята из
+ https://www.prolificinteractive.com/2016/09/08/a-functional-approach-to-uitextfield-validation-2/
+ */
+
 protocol Validatable {
     associatedtype T
     
