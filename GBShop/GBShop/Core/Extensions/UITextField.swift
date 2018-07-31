@@ -28,7 +28,11 @@ extension UITextField: Validatable {
         }
     }
     
-    func validate(_ functions: [T]) -> Bool {
+    func validate(_ functions: [T]?) -> Bool {
+        guard let functions = functions else {
+            return true
+        }
+        
         return functions
             .map { function in
                 function(self.text ?? "")

@@ -13,5 +13,5 @@ protocol Validatable {
     
     var validateFunctions: [T]? { get set }
     
-    func validate(_ functions: [T]) -> Bool
+    func validate(_ functions: [T]?) -> Bool
 }

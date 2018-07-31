@@ -90,6 +90,7 @@
 		D4E1F043210FF390000FAF5C /* Evaluatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F042210FF390000FAF5C /* Evaluatable.swift */; };
 		D4E1F045210FF455000FAF5C /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F044210FF455000FAF5C /* UITextField.swift */; };
 		D4E1F04B21100D45000FAF5C /* TextFieldValidating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F04A21100D45000FAF5C /* TextFieldValidating.swift */; };
+		D4E1F04D21101572000FAF5C /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F04C21101572000FAF5C /* TextFieldValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +204,7 @@
 		D4E1F042210FF390000FAF5C /* Evaluatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluatable.swift; sourceTree = "<group>"; };
 		D4E1F044210FF455000FAF5C /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		D4E1F04A21100D45000FAF5C /* TextFieldValidating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidating.swift; sourceTree = "<group>"; };
+		D4E1F04C21101572000FAF5C /* TextFieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidator.swift; sourceTree = "<group>"; };
 		E4C84B3397E4649FA125EFEA /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
 		EEB0AEBF4C6BFCEB789C3D39 /* Pods-GBShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShopUITests/Pods-GBShopUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -336,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				D4CEECD02106B908009B70B4 /* ViewControllerExtension.swift */,
+				D4E1F04C21101572000FAF5C /* TextFieldValidator.swift */,
 				D4E1F03F210FF2FF000FAF5C /* Protocols */,
 				D480465B20F5847100E78A72 /* Extensions */,
 				D42535DF20EEE78800986A85 /* Network */,
@@ -829,6 +832,7 @@
 				D4C46FD7210ABAB200351D99 /* AuthRouting.swift in Sources */,
 				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
 				D4E1F04B21100D45000FAF5C /* TextFieldValidating.swift in Sources */,
+				D4E1F04D21101572000FAF5C /* TextFieldValidator.swift in Sources */,
 				D4CEED2C210A83C7009B70B4 /* AuthViewConfigurator.swift in Sources */,
 				D4DC96A220F97DA600B32844 /* ApproveReviewResult.swift in Sources */,
 				D425360520EF079B00986A85 /* ChangeUserDataRequestFactory.swift in Sources */,

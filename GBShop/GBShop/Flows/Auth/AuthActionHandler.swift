@@ -10,9 +10,20 @@ import UIKit
 
 class AuthActionHandler: AuthActionHandling {
     weak var view: AuthViewProtocol?
+    var validator: TextFieldValidating? {
+        didSet {
+            guard let view = view else {
+                return
+            }
+            validator?.textFieldArray?.append(view.loginTextField)
+            validator?.textFieldArray?.append(view.passwordTextField)
+        }
+    }
     
     var loginButtonTapHandler: AuthActionHandling.LoginButtonTapHandlerClosure?
     var registerButtonTapHandler: AuthActionHandling.RegisterButtonTapHandlerClosure?
+    
+    var validationFailed: AuthActionHandling.ValidationFailureClosure?
     
     // MARK: - AuthActionHandling
     
@@ -25,7 +36,18 @@ class AuthActionHandler: AuthActionHandling {
     
     @objc
     private func didTapLoginButton(sender: UIButton) {
-        // TODO: add textfield validation
+        guard let result = validator?.validate() else {
+            return
+        }
+        
+        switch result {
+        case .success:
+            // TODO: send network request
+            // TODO: Add keyboard notifications
+            print("success")
+        case .failure(let textField):
+            validationFailed?(textField)
+        }
         loginButtonTapHandler?()
     }
     

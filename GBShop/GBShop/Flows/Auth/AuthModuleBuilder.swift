@@ -14,6 +14,7 @@ class AuthModuleBuilder: ModuleBuilder {
     override func configure() {
         authViewController.mainView.configurator = AuthViewConfigurator()
         authViewController.actionHandler = AuthActionHandler()
+        authViewController.actionHandler?.validator = TextFieldValidator()
         authViewController.router = AuthRouter()
     }
 }

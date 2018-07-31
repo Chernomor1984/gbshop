@@ -23,11 +23,14 @@ class AuthViewConfigurator: AuthViewConfiguration {
     
     func configureLoginTextField() {
         authView?.loginTextField.placeholder = Const.loginTextFieldPlaceholder
-        authView?.loginTextField.validateFunctions = [isLoginTextFiledValid]
+        authView?.loginTextField.clearButtonMode = .whileEditing
+        authView?.loginTextField.validateFunctions = [isLoginTextFieldValid]
     }
     
     func configurePasswordTextField() {
         authView?.passwordTextField.placeholder = Const.passwordTextFieldPlaceholder
+        authView?.loginTextField.clearButtonMode = .whileEditing
+        authView?.passwordTextField.validateFunctions = [isPasswordTextFieldValid]
     }
     
     func configureLoginButton() {
@@ -40,11 +43,11 @@ class AuthViewConfigurator: AuthViewConfiguration {
     
     // MARK: - Private
     
-    private func isLoginTextFiledValid(text: String) -> Bool {
-        return false
+    private func isLoginTextFieldValid(text: String) -> Bool {
+        return !text.trimmingCharacters(in: .whitespaces).isEmpty
     }
     
     private func isPasswordTextFieldValid(text: String) -> Bool {
-        return false
+        return !text.trimmingCharacters(in: .whitespaces).isEmpty
     }
 }

@@ -9,4 +9,14 @@
 import UIKit
 
 protocol TextFieldValidating {
+    typealias TextFieldValidatingClosure = (Bool, UITextField?) -> Void
+    
+    var textFieldArray: [UITextField]? { get set }
+    
+    func validate() -> ValidationResult<UITextField>
+}
+
+enum ValidationResult<T> {
+    case success
+    case failure(T?)
 }
