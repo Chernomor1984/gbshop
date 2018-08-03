@@ -12,6 +12,7 @@ class AuthRouter: AuthRouting {
     weak var viewController: UIViewController?
     
     var loginButtonTapHandler: AuthRouting.LoginButtonTapHandlerClosure? = {
+        print("show controller with list of goods")
     }
     var registerButtonTapHandler: AuthRouting.RegisterButtonTapHandlerClosure? = {
     }

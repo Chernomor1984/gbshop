@@ -29,7 +29,7 @@ class AuthViewConfigurator: AuthViewConfiguration {
     
     func configurePasswordTextField() {
         authView?.passwordTextField.placeholder = Const.passwordTextFieldPlaceholder
-        authView?.loginTextField.clearButtonMode = .whileEditing
+        authView?.passwordTextField.clearButtonMode = .whileEditing
         authView?.passwordTextField.validateFunctions = [isPasswordTextFieldValid]
     }
     

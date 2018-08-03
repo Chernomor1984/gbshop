@@ -20,6 +20,7 @@ class AuthView: UIView, AuthViewProtocol {
     }
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var accessoryView: UIView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginTextField: UITextField!
