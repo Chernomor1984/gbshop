@@ -27,12 +27,18 @@ class KeyboardListener {
     func registerForKeyboardWillChangeFrameNotification() {
         let keyboardWillChangeFrameClosure = { (notification: Notification) in
             guard let userInfo = notification.userInfo,
-                let keyboardFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+                let beginKeyboardFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
+                let endKeyboardFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
                 return
             }
 
+            let keyboardRemainsVisible = (beginKeyboardFrame.origin.y - endKeyboardFrame.origin.y == 0)
             
-            let convertedKeyboardFrame = self.scrollView.convert(keyboardFrame, from: nil)
+            if keyboardRemainsVisible {
+                return
+            }
+            
+            let convertedKeyboardFrame = self.scrollView.convert(endKeyboardFrame, from: nil)
             let intersectionFrame = convertedKeyboardFrame.intersection(self.scrollView.frame)
             let keyboardOffset = (convertedKeyboardFrame.intersects(self.overlappingView.frame)) ? intersectionFrame.size.height : 0
             let insets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardOffset, right: 0)

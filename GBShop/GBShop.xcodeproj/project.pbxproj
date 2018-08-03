@@ -32,6 +32,7 @@
 		D425360720EF080B00986A85 /* ChangeUserDataRequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360620EF080B00986A85 /* ChangeUserDataRequestPerformer.swift */; };
 		D425360A20EF0B0B00986A85 /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360920EF0B0B00986A85 /* LogoutResult.swift */; };
 		D44504732114260B0093F660 /* KeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44504722114260B0093F660 /* KeyboardListener.swift */; };
+		D445047521144DE00093F660 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D445047421144DE00093F660 /* UserDefaults.swift */; };
 		D480464220F2ED0800E78A72 /* BaseURLConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464120F2ED0800E78A72 /* BaseURLConfigurator.swift */; };
 		D480464420F2EDA400E78A72 /* URLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464320F2EDA400E78A72 /* URLConfiguration.swift */; };
 		D480464620F505F500E78A72 /* MethodNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464520F505F500E78A72 /* MethodNames.swift */; };
@@ -147,6 +148,7 @@
 		D425360620EF080B00986A85 /* ChangeUserDataRequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestPerformer.swift; sourceTree = "<group>"; };
 		D425360920EF0B0B00986A85 /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
 		D44504722114260B0093F660 /* KeyboardListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardListener.swift; sourceTree = "<group>"; };
+		D445047421144DE00093F660 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		D480464120F2ED0800E78A72 /* BaseURLConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLConfigurator.swift; sourceTree = "<group>"; };
 		D480464320F2EDA400E78A72 /* URLConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConfiguration.swift; sourceTree = "<group>"; };
 		D480464520F505F500E78A72 /* MethodNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodNames.swift; sourceTree = "<group>"; };
@@ -492,6 +494,7 @@
 			children = (
 				D480465C20F5848A00E78A72 /* String.swift */,
 				D4E1F044210FF455000FAF5C /* UITextField.swift */,
+				D445047421144DE00093F660 /* UserDefaults.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -840,6 +843,7 @@
 				D42535F220EEF92400986A85 /* AuthRequestPerformer.swift in Sources */,
 				D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */,
 				D4CEED2E210A8853009B70B4 /* ModuleBuilder.swift in Sources */,
+				D445047521144DE00093F660 /* UserDefaults.swift in Sources */,
 				D4C46FD7210ABAB200351D99 /* AuthRouting.swift in Sources */,
 				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
 				D4E1F04B21100D45000FAF5C /* TextFieldValidating.swift in Sources */,

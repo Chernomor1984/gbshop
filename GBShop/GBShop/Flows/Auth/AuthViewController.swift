@@ -16,6 +16,8 @@ class AuthViewController: UIViewController {
     var actionHandler: AuthActionHandling? {
         didSet {
             actionHandler?.view = mainView
+            actionHandler?.validationFailed = validationFailed
+            actionHandler?.loginFailed = loginFailed
             actionHandler?.addActions()
         }
     }
@@ -25,11 +27,12 @@ class AuthViewController: UIViewController {
             router?.viewController = self
             actionHandler?.loginButtonTapHandler = router?.loginButtonTapHandler
             actionHandler?.registerButtonTapHandler = router?.registerButtonTapHandler
-            actionHandler?.validationFailed = validationFailed
         }
     }
     
     private var validationFailed: AuthActionHandling.ValidationFailureClosure?
+    private var loginFailed: AuthActionHandling.LoginFailureClosure?
+    
     private var keyboardListener: KeyboardListener?
     
     // MARK: - Life cycle
@@ -43,6 +46,11 @@ class AuthViewController: UIViewController {
         
         validationFailed = { textField in
             textField?.becomeFirstResponder()
+        }
+        
+        loginFailed = {
+            // TODO: add alert with error message
+            print("login failed")
         }
     }
 }
