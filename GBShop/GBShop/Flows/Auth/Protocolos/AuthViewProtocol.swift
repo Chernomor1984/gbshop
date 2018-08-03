@@ -11,6 +11,8 @@ import UIKit
 protocol AuthViewProtocol: class {
     var scrollView: UIScrollView! { get }
     
+    var accessoryView: UIView! { get }
+    
     var loginTextField: UITextField! { get }
     var passwordTextField: UITextField! { get }
     

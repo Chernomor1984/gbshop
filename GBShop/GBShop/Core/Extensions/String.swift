@@ -33,9 +33,7 @@ extension String: Evaluatable {
     
     // MARK: - Evaluatable
     
-    typealias T = String
-    
-    func evaluate(with condition: T) -> Bool {
+    func evaluate(with condition: String) -> Bool {
         guard let range = range(of: condition, options: .regularExpression, range: nil, locale: .current) else {
             return false
         }

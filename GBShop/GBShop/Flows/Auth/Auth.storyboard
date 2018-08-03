@@ -29,7 +29,7 @@
                                             <constraint firstAttribute="width" id="rzY-8B-uk9"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Veh-QL-R9F">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Veh-QL-R9F" userLabel="accessoryView">
                                         <rect key="frame" x="0.0" y="181" width="320" height="186"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbn-cA-OAA" userLabel="Login button">
@@ -90,6 +90,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TS9-jP-4aP"/>
                         <connections>
+                            <outlet property="accessoryView" destination="Veh-QL-R9F" id="nYK-vo-Kg2"/>
                             <outlet property="loginButton" destination="zbn-cA-OAA" id="YFQ-KA-2oC"/>
                             <outlet property="loginTextField" destination="cO0-MG-iMb" id="3IR-In-BW1"/>
                             <outlet property="passwordTextField" destination="hhf-ah-6Em" id="TtK-bC-524"/>

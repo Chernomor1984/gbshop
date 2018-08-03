@@ -30,12 +30,15 @@ class AuthViewController: UIViewController {
     }
     
     private var validationFailed: AuthActionHandling.ValidationFailureClosure?
+    private var keyboardListener: KeyboardListener?
     
     // MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        keyboardListener = KeyboardListener(scrollView: mainView.scrollView, overlappingView: mainView.accessoryView)
+        keyboardListener?.registerForKeyboardWillChangeFrameNotification()
         addEndEditingTapHandler()
         
         validationFailed = { textField in

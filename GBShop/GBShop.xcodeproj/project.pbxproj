@@ -31,6 +31,7 @@
 		D425360520EF079B00986A85 /* ChangeUserDataRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360420EF079B00986A85 /* ChangeUserDataRequestFactory.swift */; };
 		D425360720EF080B00986A85 /* ChangeUserDataRequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360620EF080B00986A85 /* ChangeUserDataRequestPerformer.swift */; };
 		D425360A20EF0B0B00986A85 /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360920EF0B0B00986A85 /* LogoutResult.swift */; };
+		D44504732114260B0093F660 /* KeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44504722114260B0093F660 /* KeyboardListener.swift */; };
 		D480464220F2ED0800E78A72 /* BaseURLConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464120F2ED0800E78A72 /* BaseURLConfigurator.swift */; };
 		D480464420F2EDA400E78A72 /* URLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464320F2EDA400E78A72 /* URLConfiguration.swift */; };
 		D480464620F505F500E78A72 /* MethodNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464520F505F500E78A72 /* MethodNames.swift */; };
@@ -145,6 +146,7 @@
 		D425360420EF079B00986A85 /* ChangeUserDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestFactory.swift; sourceTree = "<group>"; };
 		D425360620EF080B00986A85 /* ChangeUserDataRequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestPerformer.swift; sourceTree = "<group>"; };
 		D425360920EF0B0B00986A85 /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
+		D44504722114260B0093F660 /* KeyboardListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardListener.swift; sourceTree = "<group>"; };
 		D480464120F2ED0800E78A72 /* BaseURLConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLConfigurator.swift; sourceTree = "<group>"; };
 		D480464320F2EDA400E78A72 /* URLConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConfiguration.swift; sourceTree = "<group>"; };
 		D480464520F505F500E78A72 /* MethodNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodNames.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 		D411D3E820EB01F90040EB27 /* BussinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				D4450471211425C70093F660 /* Keyboard */,
 				D42535EE20EEF6DC00986A85 /* Network */,
 				D411D3EB20EB024D0040EB27 /* AppDelegate */,
 			);
@@ -456,6 +459,14 @@
 				D425360620EF080B00986A85 /* ChangeUserDataRequestPerformer.swift */,
 			);
 			path = ChangeUserData;
+			sourceTree = "<group>";
+		};
+		D4450471211425C70093F660 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D44504722114260B0093F660 /* KeyboardListener.swift */,
+			);
+			path = Keyboard;
 			sourceTree = "<group>";
 		};
 		D480464720F50A6300E78A72 /* URLConfiguration */ = {
@@ -837,6 +848,7 @@
 				D4DC96A220F97DA600B32844 /* ApproveReviewResult.swift in Sources */,
 				D425360520EF079B00986A85 /* ChangeUserDataRequestFactory.swift in Sources */,
 				D42535F620EEFF0200986A85 /* RegistrationResult.swift in Sources */,
+				D44504732114260B0093F660 /* KeyboardListener.swift in Sources */,
 				D4CEED26210A7773009B70B4 /* AuthViewProtocol.swift in Sources */,
 				D480464E20F50D1C00E78A72 /* ProductList.swift in Sources */,
 				D480464620F505F500E78A72 /* MethodNames.swift in Sources */,
