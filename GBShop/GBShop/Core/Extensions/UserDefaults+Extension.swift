@@ -29,6 +29,6 @@ extension UserDefaults {
     
     func isLogged() -> Bool {
         let user = try? read(key: Const.userKey, objectType: User.self)
-        return user == nil
+        return user != nil
     }
 }

@@ -17,6 +17,6 @@ protocol AuthRouting: class {
      */
     var viewController: UIViewController? { get set }
     
-    var loginButtonTapHandler: LoginButtonTapHandlerClosure? { get set }
-    var registerButtonTapHandler: RegisterButtonTapHandlerClosure? { get set }
+    func showCatalog()
+    func showRegistration()
 }

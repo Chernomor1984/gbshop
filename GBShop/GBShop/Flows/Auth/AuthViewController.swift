@@ -25,8 +25,8 @@ class AuthViewController: UIViewController {
     var router: AuthRouting? {
         didSet {
             router?.viewController = self
-            actionHandler?.loginButtonTapHandler = router?.loginButtonTapHandler
-            actionHandler?.registerButtonTapHandler = router?.registerButtonTapHandler
+            actionHandler?.loginButtonTapHandler = router?.showCatalog
+            actionHandler?.registerButtonTapHandler = router?.showRegistration
         }
     }
     
