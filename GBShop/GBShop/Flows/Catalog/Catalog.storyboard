@@ -14,7 +14,7 @@
         <scene sceneID="PCL-0D-Tpb">
             <objects>
                 <viewController storyboardIdentifier="CatalogViewController" id="H7i-Gy-BlY" customClass="CatalogViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IGa-gf-MzE">
+                    <view key="view" contentMode="scaleToFill" id="IGa-gf-MzE" customClass="CatalogView" customModule="GBShop" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -31,11 +31,22 @@
                             <constraint firstItem="tfe-fP-LlG" firstAttribute="bottom" secondItem="5uD-qT-KQ8" secondAttribute="bottom" id="spH-o7-tea"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tfe-fP-LlG"/>
+                        <connections>
+                            <outlet property="tableView" destination="5uD-qT-KQ8" id="Zo0-Cx-IiH"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="Ghg-gf-cXe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="k3W-IA-Ubd"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouV-lr-W85" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="71o-F5-9ch" customClass="CatalogModuleBuilder" customModule="GBShop" customModuleProvider="target">
+                    <connections>
+                        <outlet property="catalogViewController" destination="H7i-Gy-BlY" id="TZ5-fe-svt"/>
+                    </connections>
+                </customObject>
             </objects>
-            <point key="canvasLocation" x="10" y="145"/>
+            <point key="canvasLocation" x="948" y="144.3778110944528"/>
         </scene>
     </scenes>
 </document>

@@ -9,6 +9,17 @@
 import UIKit
 
 class CatalogViewController: UIViewController {
+    var mainView: CatalogViewProtocol {
+        return view as! CatalogViewProtocol
+    }
+    
+    var navigationBarConfigurator: CatalogNavigationBarConfigurable? {
+        didSet {
+            navigationItem.title = navigationBarConfigurator?.navigationBarTitle()
+        }
+    }
+    
+    private var userSettingsButtonTapHandler: CatalogNavigationBarConfigurable.UserSettingsButtonTapHandlerClosure?
     
     // MARK: - Life cycle
     
@@ -16,5 +27,17 @@ class CatalogViewController: UIViewController {
         super.viewDidLoad()
         
         self.automaticallyAdjustsScrollViewInsets = false
+        configureNavigationBar()
+    }
+    
+    // MARK: - Private
+    
+    private func configureNavigationBar() {
+        userSettingsButtonTapHandler = {
+            print("did Tap user settings button")
+        }
+        
+        navigationBarConfigurator?.userSettingsButtonTapHandler = userSettingsButtonTapHandler
+        navigationBarConfigurator?.configureNavigationBarButtonItems(navigationItem: navigationItem)
     }
 }
