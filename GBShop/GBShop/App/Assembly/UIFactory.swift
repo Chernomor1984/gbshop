@@ -12,6 +12,7 @@ class UIFactory {
     
     private struct Const {
         static let authStoryboardName = "Auth"
+        static let catalogStoryboardName = "Catalog"
     }
     
     private let requestFactory = RequestFactory()
@@ -21,6 +22,13 @@ class UIFactory {
     func loadAuthViewController() -> UIViewController {
         return self.loadViewController(storyboardName: Const.authStoryboardName,
                                        identifier: String.identifier(of: AuthViewController.self))
+    }
+    
+    func loadCatalogController() -> UIViewController {
+        let controller = self.loadViewController(storyboardName: Const.catalogStoryboardName,
+                                                 identifier: String.identifier(of: CatalogViewController.self))
+        let navigationController = UINavigationController(rootViewController: controller)
+        return navigationController
     }
     
     // MARK: - Private

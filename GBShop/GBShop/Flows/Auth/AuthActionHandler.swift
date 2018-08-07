@@ -53,9 +53,10 @@ class AuthActionHandler: AuthActionHandling {
         
         switch result {
         case .success:
-            /*
-             Поскольку мы провалидировали текстфилды на корректные значения (в нашем случае они не пустые), мы можем применить force unwrap
-             **/
+            guard let login = view?.loginTextField.text, let password = view?.passwordTextField.text else {
+                fatalError("No valid login/password values")
+            }
+            
             let completion: LoginResponse = { [weak self] (response) in
                 guard let loginResult = response.value else {
                     self?.loginFailed?()
@@ -67,12 +68,10 @@ class AuthActionHandler: AuthActionHandling {
                     return
                 }
                 
-                // TODO: save user into user defaults
+                try? UserDefaults.standard.save(object: loginResult.user, key: UserDefaults.Const.userKey)
                 self?.loginButtonTapHandler?()
             }
-            authRequestPerformer?.login(userName: (view?.loginTextField.text)!,
-                                        password: (view?.passwordTextField.text)!,
-                                        completionHandler: completion)
+            authRequestPerformer?.login(userName: login, password: password, completionHandler: completion)
         case .failure(let textField):
             validationFailed?(textField)
         }

@@ -11,9 +11,16 @@ import UIKit
 class AuthRouter: AuthRouting {
     weak var viewController: UIViewController?
     
-    var loginButtonTapHandler: AuthRouting.LoginButtonTapHandlerClosure? = {
-        print("show controller with list of goods")
+    func showCatalog() {
+        guard let appDelegate = UIApplication.shared.delegate, let window = appDelegate.window as? UIWindow else {
+            fatalError("no appDelegate found")
+        }
+        
+        DispatchQueue.main.async {
+            window.rootViewController = UIFactory().loadCatalogController()
+        }
     }
-    var registerButtonTapHandler: AuthRouting.RegisterButtonTapHandlerClosure? = {
+    
+    func showRegistration() {
     }
 }

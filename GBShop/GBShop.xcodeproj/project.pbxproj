@@ -32,7 +32,18 @@
 		D425360720EF080B00986A85 /* ChangeUserDataRequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360620EF080B00986A85 /* ChangeUserDataRequestPerformer.swift */; };
 		D425360A20EF0B0B00986A85 /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D425360920EF0B0B00986A85 /* LogoutResult.swift */; };
 		D44504732114260B0093F660 /* KeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44504722114260B0093F660 /* KeyboardListener.swift */; };
-		D445047521144DE00093F660 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D445047421144DE00093F660 /* UserDefaults.swift */; };
+		D445047521144DE00093F660 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D445047421144DE00093F660 /* UserDefaults+Extension.swift */; };
+		D445049321196B1C0093F660 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D445049221196B1C0093F660 /* UIViewController+Extension.swift */; };
+		D4450496211971B90093F660 /* Catalog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4450495211971B90093F660 /* Catalog.storyboard */; };
+		D4450498211971D50093F660 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4450497211971D50093F660 /* CatalogViewController.swift */; };
+		D445049A2119903A0093F660 /* NavigationBarConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44504992119903A0093F660 /* NavigationBarConfigurable.swift */; };
+		D445049F2119950B0093F660 /* CatalogViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D445049E2119950B0093F660 /* CatalogViewConfiguration.swift */; };
+		D44504A1211995FA0093F660 /* CatalogViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44504A0211995FA0093F660 /* CatalogViewProtocol.swift */; };
+		D44504A3211996530093F660 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44504A2211996530093F660 /* CatalogView.swift */; };
+		D44504A5211999430093F660 /* CatalogViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44504A4211999430093F660 /* CatalogViewConfigurator.swift */; };
+		D44504A721199AF50093F660 /* CatalogNavigationBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44504A621199AF50093F660 /* CatalogNavigationBarConfigurator.swift */; };
+		D44504A921199D5E0093F660 /* CatalogNavigationBarConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44504A821199D5E0093F660 /* CatalogNavigationBarConfigurable.swift */; };
+		D44504AB2119A2BF0093F660 /* CatalogModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44504AA2119A2BF0093F660 /* CatalogModuleBuilder.swift */; };
 		D480464220F2ED0800E78A72 /* BaseURLConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464120F2ED0800E78A72 /* BaseURLConfigurator.swift */; };
 		D480464420F2EDA400E78A72 /* URLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464320F2EDA400E78A72 /* URLConfiguration.swift */; };
 		D480464620F505F500E78A72 /* MethodNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480464520F505F500E78A72 /* MethodNames.swift */; };
@@ -44,7 +55,7 @@
 		D480465620F5741F00E78A72 /* ErrorParserStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465520F5741F00E78A72 /* ErrorParserStub.swift */; };
 		D480465820F57DCD00E78A72 /* RequestFactoryMok.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465720F57DCD00E78A72 /* RequestFactoryMok.swift */; };
 		D480465A20F583C100E78A72 /* OHHTTPStubsResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465920F583C100E78A72 /* OHHTTPStubsResponseExtension.swift */; };
-		D480465D20F5848A00E78A72 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465C20F5848A00E78A72 /* String.swift */; };
+		D480465D20F5848A00E78A72 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480465C20F5848A00E78A72 /* String+Extension.swift */; };
 		D480466220F58D7C00E78A72 /* AuthRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480466120F58D7C00E78A72 /* AuthRequestPerformerTests.swift */; };
 		D480466F20F5962900E78A72 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466320F58F6C00E78A72 /* login.json */; };
 		D480467020F5962900E78A72 /* logout.json in Resources */ = {isa = PBXBuildFile; fileRef = D480466520F58F9700E78A72 /* logout.json */; };
@@ -72,7 +83,6 @@
 		D4CEECC821069D37009B70B4 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECC721069D37009B70B4 /* AuthViewController.swift */; };
 		D4CEECCB21069F0A009B70B4 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CEECCA21069F0A009B70B4 /* Auth.storyboard */; };
 		D4CEECCD2106A38F009B70B4 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECCC2106A38F009B70B4 /* UIFactory.swift */; };
-		D4CEECD12106B908009B70B4 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEECD02106B908009B70B4 /* ViewControllerExtension.swift */; };
 		D4CEED26210A7773009B70B4 /* AuthViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEED25210A7773009B70B4 /* AuthViewProtocol.swift */; };
 		D4CEED28210A7EF4009B70B4 /* AuthViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEED27210A7EF4009B70B4 /* AuthViewConfiguration.swift */; };
 		D4CEED2A210A827D009B70B4 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEED29210A827D009B70B4 /* AuthView.swift */; };
@@ -90,7 +100,7 @@
 		D4DC96AE20F9860D00B32844 /* removeReview.json in Resources */ = {isa = PBXBuildFile; fileRef = D4DC96AD20F9860D00B32844 /* removeReview.json */; };
 		D4E1F041210FF31B000FAF5C /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F040210FF31B000FAF5C /* Validatable.swift */; };
 		D4E1F043210FF390000FAF5C /* Evaluatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F042210FF390000FAF5C /* Evaluatable.swift */; };
-		D4E1F045210FF455000FAF5C /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F044210FF455000FAF5C /* UITextField.swift */; };
+		D4E1F045210FF455000FAF5C /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F044210FF455000FAF5C /* UITextField+Extension.swift */; };
 		D4E1F04B21100D45000FAF5C /* TextFieldValidating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F04A21100D45000FAF5C /* TextFieldValidating.swift */; };
 		D4E1F04D21101572000FAF5C /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1F04C21101572000FAF5C /* TextFieldValidator.swift */; };
 /* End PBXBuildFile section */
@@ -148,7 +158,18 @@
 		D425360620EF080B00986A85 /* ChangeUserDataRequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestPerformer.swift; sourceTree = "<group>"; };
 		D425360920EF0B0B00986A85 /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
 		D44504722114260B0093F660 /* KeyboardListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardListener.swift; sourceTree = "<group>"; };
-		D445047421144DE00093F660 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		D445047421144DE00093F660 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		D445049221196B1C0093F660 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		D4450495211971B90093F660 /* Catalog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Catalog.storyboard; sourceTree = "<group>"; };
+		D4450497211971D50093F660 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		D44504992119903A0093F660 /* NavigationBarConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarConfigurable.swift; sourceTree = "<group>"; };
+		D445049E2119950B0093F660 /* CatalogViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewConfiguration.swift; sourceTree = "<group>"; };
+		D44504A0211995FA0093F660 /* CatalogViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewProtocol.swift; sourceTree = "<group>"; };
+		D44504A2211996530093F660 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		D44504A4211999430093F660 /* CatalogViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewConfigurator.swift; sourceTree = "<group>"; };
+		D44504A621199AF50093F660 /* CatalogNavigationBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogNavigationBarConfigurator.swift; sourceTree = "<group>"; };
+		D44504A821199D5E0093F660 /* CatalogNavigationBarConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogNavigationBarConfigurable.swift; sourceTree = "<group>"; };
+		D44504AA2119A2BF0093F660 /* CatalogModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModuleBuilder.swift; sourceTree = "<group>"; };
 		D480464120F2ED0800E78A72 /* BaseURLConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLConfigurator.swift; sourceTree = "<group>"; };
 		D480464320F2EDA400E78A72 /* URLConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConfiguration.swift; sourceTree = "<group>"; };
 		D480464520F505F500E78A72 /* MethodNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodNames.swift; sourceTree = "<group>"; };
@@ -160,7 +181,7 @@
 		D480465520F5741F00E78A72 /* ErrorParserStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParserStub.swift; sourceTree = "<group>"; };
 		D480465720F57DCD00E78A72 /* RequestFactoryMok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryMok.swift; sourceTree = "<group>"; };
 		D480465920F583C100E78A72 /* OHHTTPStubsResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHHTTPStubsResponseExtension.swift; sourceTree = "<group>"; };
-		D480465C20F5848A00E78A72 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		D480465C20F5848A00E78A72 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D480466120F58D7C00E78A72 /* AuthRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestPerformerTests.swift; sourceTree = "<group>"; };
 		D480466320F58F6C00E78A72 /* login.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
 		D480466520F58F9700E78A72 /* logout.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = logout.json; sourceTree = "<group>"; };
@@ -188,7 +209,6 @@
 		D4CEECC721069D37009B70B4 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		D4CEECCA21069F0A009B70B4 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		D4CEECCC2106A38F009B70B4 /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
-		D4CEECD02106B908009B70B4 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		D4CEED25210A7773009B70B4 /* AuthViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewProtocol.swift; sourceTree = "<group>"; };
 		D4CEED27210A7EF4009B70B4 /* AuthViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewConfiguration.swift; sourceTree = "<group>"; };
 		D4CEED29210A827D009B70B4 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
@@ -206,7 +226,7 @@
 		D4DC96AD20F9860D00B32844 /* removeReview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = removeReview.json; sourceTree = "<group>"; };
 		D4E1F040210FF31B000FAF5C /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		D4E1F042210FF390000FAF5C /* Evaluatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluatable.swift; sourceTree = "<group>"; };
-		D4E1F044210FF455000FAF5C /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		D4E1F044210FF455000FAF5C /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		D4E1F04A21100D45000FAF5C /* TextFieldValidating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidating.swift; sourceTree = "<group>"; };
 		D4E1F04C21101572000FAF5C /* TextFieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidator.swift; sourceTree = "<group>"; };
 		E4C84B3397E4649FA125EFEA /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
@@ -333,6 +353,7 @@
 		D411D3E220EB000C0040EB27 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				D4450494211970F80093F660 /* Catalog */,
 				D4CEECC921069EE7009B70B4 /* Auth */,
 			);
 			path = Flows;
@@ -341,7 +362,6 @@
 		D411D3E320EB001C0040EB27 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D4CEECD02106B908009B70B4 /* ViewControllerExtension.swift */,
 				D4E1F04C21101572000FAF5C /* TextFieldValidator.swift */,
 				D4E1F03F210FF2FF000FAF5C /* Protocols */,
 				D480465B20F5847100E78A72 /* Extensions */,
@@ -471,6 +491,30 @@
 			path = Keyboard;
 			sourceTree = "<group>";
 		};
+		D4450494211970F80093F660 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				D4450495211971B90093F660 /* Catalog.storyboard */,
+				D4450497211971D50093F660 /* CatalogViewController.swift */,
+				D44504A2211996530093F660 /* CatalogView.swift */,
+				D44504A4211999430093F660 /* CatalogViewConfigurator.swift */,
+				D44504A621199AF50093F660 /* CatalogNavigationBarConfigurator.swift */,
+				D44504AA2119A2BF0093F660 /* CatalogModuleBuilder.swift */,
+				D445049D211993190093F660 /* Protocols */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		D445049D211993190093F660 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D44504A0211995FA0093F660 /* CatalogViewProtocol.swift */,
+				D445049E2119950B0093F660 /* CatalogViewConfiguration.swift */,
+				D44504A821199D5E0093F660 /* CatalogNavigationBarConfigurable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		D480464720F50A6300E78A72 /* URLConfiguration */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,9 +536,10 @@
 		D480465B20F5847100E78A72 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D480465C20F5848A00E78A72 /* String.swift */,
-				D4E1F044210FF455000FAF5C /* UITextField.swift */,
-				D445047421144DE00093F660 /* UserDefaults.swift */,
+				D480465C20F5848A00E78A72 /* String+Extension.swift */,
+				D4E1F044210FF455000FAF5C /* UITextField+Extension.swift */,
+				D445047421144DE00093F660 /* UserDefaults+Extension.swift */,
+				D445049221196B1C0093F660 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -581,6 +626,7 @@
 				D4E1F040210FF31B000FAF5C /* Validatable.swift */,
 				D4E1F042210FF390000FAF5C /* Evaluatable.swift */,
 				D4E1F04A21100D45000FAF5C /* TextFieldValidating.swift */,
+				D44504992119903A0093F660 /* NavigationBarConfigurable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -702,6 +748,7 @@
 				D4CEEC9721016948009B70B4 /* getBasket.json in Resources */,
 				D480467120F5962900E78A72 /* registerUser.json in Resources */,
 				D480467220F5962900E78A72 /* changeUserData.json in Resources */,
+				D4450496211971B90093F660 /* Catalog.storyboard in Resources */,
 				D4CEECCB21069F0A009B70B4 /* Auth.storyboard in Resources */,
 				D4DC96AE20F9860D00B32844 /* removeReview.json in Resources */,
 				D480467F20F658B400E78A72 /* posts.json in Resources */,
@@ -812,10 +859,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4DC96A620F97FBC00B32844 /* ReviewRequestPerformer.swift in Sources */,
+				D44504A3211996530093F660 /* CatalogView.swift in Sources */,
 				D4E1F041210FF31B000FAF5C /* Validatable.swift in Sources */,
 				D4CEEC87210154B6009B70B4 /* AddToBasketResult.swift in Sources */,
 				D4CEEC8B21015567009B70B4 /* UserBasketResult.swift in Sources */,
-				D480465D20F5848A00E78A72 /* String.swift in Sources */,
+				D44504A1211995FA0093F660 /* CatalogViewProtocol.swift in Sources */,
+				D445049321196B1C0093F660 /* UIViewController+Extension.swift in Sources */,
+				D480465D20F5848A00E78A72 /* String+Extension.swift in Sources */,
 				D480464420F2EDA400E78A72 /* URLConfiguration.swift in Sources */,
 				D4CEECCD2106A38F009B70B4 /* UIFactory.swift in Sources */,
 				D42535F420EEFB2000986A85 /* RequestFactory.swift in Sources */,
@@ -826,6 +876,8 @@
 				D425360020EF011200986A85 /* RegistrationParams.swift in Sources */,
 				D4DC96A020F97CB500B32844 /* AddReviewResult.swift in Sources */,
 				D42535EB20EEF67900986A85 /* LoginResult.swift in Sources */,
+				D44504A721199AF50093F660 /* CatalogNavigationBarConfigurator.swift in Sources */,
+				D44504A5211999430093F660 /* CatalogViewConfigurator.swift in Sources */,
 				D4DC969E20F97C6D00B32844 /* ReviewRequestFactory.swift in Sources */,
 				D42535E520EEE85600986A85 /* DataRequestExtension.swift in Sources */,
 				D4C46FD5210AB51900351D99 /* AuthActionHandler.swift in Sources */,
@@ -833,7 +885,7 @@
 				D480465220F56A2F00E78A72 /* Product.swift in Sources */,
 				D42535E920EEF50200986A85 /* RequestRouter.swift in Sources */,
 				D480464A20F50AB700E78A72 /* ProductsRequestFactory.swift in Sources */,
-				D4E1F045210FF455000FAF5C /* UITextField.swift in Sources */,
+				D4E1F045210FF455000FAF5C /* UITextField+Extension.swift in Sources */,
 				D425360220EF06DF00986A85 /* ChangeUserDataResult.swift in Sources */,
 				D42535F820EEFFA200986A85 /* BaseRequestPerformer.swift in Sources */,
 				D4C46FD9210ABC7E00351D99 /* AuthRouter.swift in Sources */,
@@ -843,7 +895,7 @@
 				D42535F220EEF92400986A85 /* AuthRequestPerformer.swift in Sources */,
 				D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */,
 				D4CEED2E210A8853009B70B4 /* ModuleBuilder.swift in Sources */,
-				D445047521144DE00093F660 /* UserDefaults.swift in Sources */,
+				D445047521144DE00093F660 /* UserDefaults+Extension.swift in Sources */,
 				D4C46FD7210ABAB200351D99 /* AuthRouting.swift in Sources */,
 				D42535E320EEE7FB00986A85 /* ErrorParser.swift in Sources */,
 				D4E1F04B21100D45000FAF5C /* TextFieldValidating.swift in Sources */,
@@ -856,17 +908,21 @@
 				D4CEED26210A7773009B70B4 /* AuthViewProtocol.swift in Sources */,
 				D480464E20F50D1C00E78A72 /* ProductList.swift in Sources */,
 				D480464620F505F500E78A72 /* MethodNames.swift in Sources */,
+				D445049F2119950B0093F660 /* CatalogViewConfiguration.swift in Sources */,
+				D44504AB2119A2BF0093F660 /* CatalogModuleBuilder.swift in Sources */,
 				D4CEED30210A8B01009B70B4 /* AuthModuleBuilder.swift in Sources */,
-				D4CEECD12106B908009B70B4 /* ViewControllerExtension.swift in Sources */,
 				D4DC96A420F97DF100B32844 /* RemoveReviewResult.swift in Sources */,
 				D425360720EF080B00986A85 /* ChangeUserDataRequestPerformer.swift in Sources */,
+				D44504A921199D5E0093F660 /* CatalogNavigationBarConfigurable.swift in Sources */,
 				D4C46FD3210AB35F00351D99 /* AuthActionHandling.swift in Sources */,
+				D4450498211971D50093F660 /* CatalogViewController.swift in Sources */,
 				D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */,
 				D4CEECC821069D37009B70B4 /* AuthViewController.swift in Sources */,
 				D480464C20F50C2F00E78A72 /* ProductsRequestPerformer.swift in Sources */,
 				D425360A20EF0B0B00986A85 /* LogoutResult.swift in Sources */,
 				D4CEEC892101551C009B70B4 /* RemoveFromBasketResult.swift in Sources */,
 				D4CEED2A210A827D009B70B4 /* AuthView.swift in Sources */,
+				D445049A2119903A0093F660 /* NavigationBarConfigurable.swift in Sources */,
 				D42535E720EEF04C00986A85 /* AbstractRequestFaсtory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

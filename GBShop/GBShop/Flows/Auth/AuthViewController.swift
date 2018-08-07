@@ -25,8 +25,8 @@ class AuthViewController: UIViewController {
     var router: AuthRouting? {
         didSet {
             router?.viewController = self
-            actionHandler?.loginButtonTapHandler = router?.loginButtonTapHandler
-            actionHandler?.registerButtonTapHandler = router?.registerButtonTapHandler
+            actionHandler?.loginButtonTapHandler = router?.showCatalog
+            actionHandler?.registerButtonTapHandler = router?.showRegistration
         }
     }
     
@@ -48,9 +48,12 @@ class AuthViewController: UIViewController {
             textField?.becomeFirstResponder()
         }
         
-        loginFailed = {
-            // TODO: add alert with error message
-            print("login failed")
+        loginFailed = { [weak self] in
+            DispatchQueue.main.async {
+                self?.view.endEditing(true)
+                let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                self?.showErrorAlert(title: "Authorization failed", message: "Wrong login or password", actions: [action])
+            }
         }
     }
 }

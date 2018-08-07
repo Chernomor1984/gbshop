@@ -26,4 +26,9 @@ extension UserDefaults {
         
         return try JSONDecoder().decode(objectType, from: data)
     }
+    
+    func isLogged() -> Bool {
+        let user = try? read(key: Const.userKey, objectType: User.self)
+        return user != nil
+    }
 }
