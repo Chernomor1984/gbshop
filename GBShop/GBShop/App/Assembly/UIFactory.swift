@@ -31,6 +31,13 @@ class UIFactory {
         return navigationController
     }
     
+    func loadUserInfoController() -> UIViewController {
+        let controller = self.loadViewController(storyboardName: Const.authStoryboardName,
+                                                 identifier: String.identifier(of: UserInfoController.self))
+        let navigationController = UINavigationController(rootViewController: controller)
+        return navigationController
+    }
+    
     // MARK: - Private
     
     private func loadViewController(storyboardName: String, identifier: String, bundle: Bundle? = nil) -> UIViewController {

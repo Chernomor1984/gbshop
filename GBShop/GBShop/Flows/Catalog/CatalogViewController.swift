@@ -19,6 +19,12 @@ class CatalogViewController: UIViewController {
         }
     }
     
+    var router: CatalogRouting? {
+        didSet {
+            router?.viewController = self
+        }
+    }
+    
     private var userSettingsButtonTapHandler: CatalogNavigationBarConfigurable.UserSettingsButtonTapHandlerClosure?
     
     // MARK: - Life cycle
@@ -34,7 +40,7 @@ class CatalogViewController: UIViewController {
     
     private func configureNavigationBar() {
         userSettingsButtonTapHandler = {
-            print("did Tap user settings button")
+            self.router?.showUserInfo()
         }
         
         navigationBarConfigurator?.userSettingsButtonTapHandler = userSettingsButtonTapHandler

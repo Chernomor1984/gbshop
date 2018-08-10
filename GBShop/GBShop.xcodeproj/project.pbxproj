@@ -66,6 +66,14 @@
 		D480467620F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */; };
 		D480467820F64B6D00E78A72 /* ProductsRequestPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */; };
 		D480467F20F658B400E78A72 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = D480467E20F658B400E78A72 /* posts.json */; };
+		D4BF2F8F211D294C00929F1A /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF2F8E211D294C00929F1A /* UserInfoController.swift */; };
+		D4BF2F92211D29F900929F1A /* CatalogRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF2F91211D29F900929F1A /* CatalogRouting.swift */; };
+		D4BF2F94211D2A3C00929F1A /* CatalogRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF2F93211D2A3C00929F1A /* CatalogRouter.swift */; };
+		D4BF2F96211D311C00929F1A /* UserInfoNavigationBarConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF2F95211D311C00929F1A /* UserInfoNavigationBarConfigurable.swift */; };
+		D4BF2F98211D32B900929F1A /* UserInfoNavigationBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF2F97211D32B900929F1A /* UserInfoNavigationBarConfigurator.swift */; };
+		D4BF2F9A211D342400929F1A /* UserInfoRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF2F99211D342400929F1A /* UserInfoRouting.swift */; };
+		D4BF2F9C211D346F00929F1A /* UserInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF2F9B211D346F00929F1A /* UserInfoRouter.swift */; };
+		D4BF2F9E211D357D00929F1A /* UserInfoModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF2F9D211D357D00929F1A /* UserInfoModuleBuilder.swift */; };
 		D4C46FD3210AB35F00351D99 /* AuthActionHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C46FD2210AB35F00351D99 /* AuthActionHandling.swift */; };
 		D4C46FD5210AB51900351D99 /* AuthActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C46FD4210AB51900351D99 /* AuthActionHandler.swift */; };
 		D4C46FD7210ABAB200351D99 /* AuthRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C46FD6210ABAB200351D99 /* AuthRouting.swift */; };
@@ -192,6 +200,14 @@
 		D480467520F6453C00E78A72 /* ChangeUserDataRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestPerformerTests.swift; sourceTree = "<group>"; };
 		D480467720F64B6D00E78A72 /* ProductsRequestPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestPerformerTests.swift; sourceTree = "<group>"; };
 		D480467E20F658B400E78A72 /* posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		D4BF2F8E211D294C00929F1A /* UserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoController.swift; sourceTree = "<group>"; };
+		D4BF2F91211D29F900929F1A /* CatalogRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRouting.swift; sourceTree = "<group>"; };
+		D4BF2F93211D2A3C00929F1A /* CatalogRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRouter.swift; sourceTree = "<group>"; };
+		D4BF2F95211D311C00929F1A /* UserInfoNavigationBarConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoNavigationBarConfigurable.swift; sourceTree = "<group>"; };
+		D4BF2F97211D32B900929F1A /* UserInfoNavigationBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoNavigationBarConfigurator.swift; sourceTree = "<group>"; };
+		D4BF2F99211D342400929F1A /* UserInfoRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoRouting.swift; sourceTree = "<group>"; };
+		D4BF2F9B211D346F00929F1A /* UserInfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoRouter.swift; sourceTree = "<group>"; };
+		D4BF2F9D211D357D00929F1A /* UserInfoModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModuleBuilder.swift; sourceTree = "<group>"; };
 		D4C46FD2210AB35F00351D99 /* AuthActionHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActionHandling.swift; sourceTree = "<group>"; };
 		D4C46FD4210AB51900351D99 /* AuthActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActionHandler.swift; sourceTree = "<group>"; };
 		D4C46FD6210ABAB200351D99 /* AuthRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouting.swift; sourceTree = "<group>"; };
@@ -353,6 +369,7 @@
 		D411D3E220EB000C0040EB27 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				D4BF2F8D211D281E00929F1A /* User info */,
 				D4450494211970F80093F660 /* Catalog */,
 				D4CEECC921069EE7009B70B4 /* Auth */,
 			);
@@ -499,6 +516,7 @@
 				D44504A2211996530093F660 /* CatalogView.swift */,
 				D44504A4211999430093F660 /* CatalogViewConfigurator.swift */,
 				D44504A621199AF50093F660 /* CatalogNavigationBarConfigurator.swift */,
+				D4BF2F93211D2A3C00929F1A /* CatalogRouter.swift */,
 				D44504AA2119A2BF0093F660 /* CatalogModuleBuilder.swift */,
 				D445049D211993190093F660 /* Protocols */,
 			);
@@ -511,6 +529,7 @@
 				D44504A0211995FA0093F660 /* CatalogViewProtocol.swift */,
 				D445049E2119950B0093F660 /* CatalogViewConfiguration.swift */,
 				D44504A821199D5E0093F660 /* CatalogNavigationBarConfigurable.swift */,
+				D4BF2F91211D29F900929F1A /* CatalogRouting.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -574,6 +593,27 @@
 				D4CEEC90210167EA009B70B4 /* BasketRequestPerformerTests.swift */,
 			);
 			path = "Network layer tests";
+			sourceTree = "<group>";
+		};
+		D4BF2F8D211D281E00929F1A /* User info */ = {
+			isa = PBXGroup;
+			children = (
+				D4BF2F8E211D294C00929F1A /* UserInfoController.swift */,
+				D4BF2F97211D32B900929F1A /* UserInfoNavigationBarConfigurator.swift */,
+				D4BF2F9B211D346F00929F1A /* UserInfoRouter.swift */,
+				D4BF2F9D211D357D00929F1A /* UserInfoModuleBuilder.swift */,
+				D4BF2F90211D298000929F1A /* Protocols */,
+			);
+			path = "User info";
+			sourceTree = "<group>";
+		};
+		D4BF2F90211D298000929F1A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D4BF2F95211D311C00929F1A /* UserInfoNavigationBarConfigurable.swift */,
+				D4BF2F99211D342400929F1A /* UserInfoRouting.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		D4CEEC832101533B009B70B4 /* Basket */ = {
@@ -872,14 +912,17 @@
 				D4CEEC8F2101596C009B70B4 /* BasketRequestPerformer.swift in Sources */,
 				D4CEED28210A7EF4009B70B4 /* AuthViewConfiguration.swift in Sources */,
 				D480464220F2ED0800E78A72 /* BaseURLConfigurator.swift in Sources */,
+				D4BF2F9E211D357D00929F1A /* UserInfoModuleBuilder.swift in Sources */,
 				D411D3B420EAFB0B0040EB27 /* AppDelegate.swift in Sources */,
 				D425360020EF011200986A85 /* RegistrationParams.swift in Sources */,
 				D4DC96A020F97CB500B32844 /* AddReviewResult.swift in Sources */,
 				D42535EB20EEF67900986A85 /* LoginResult.swift in Sources */,
 				D44504A721199AF50093F660 /* CatalogNavigationBarConfigurator.swift in Sources */,
+				D4BF2F94211D2A3C00929F1A /* CatalogRouter.swift in Sources */,
 				D44504A5211999430093F660 /* CatalogViewConfigurator.swift in Sources */,
 				D4DC969E20F97C6D00B32844 /* ReviewRequestFactory.swift in Sources */,
 				D42535E520EEE85600986A85 /* DataRequestExtension.swift in Sources */,
+				D4BF2F92211D29F900929F1A /* CatalogRouting.swift in Sources */,
 				D4C46FD5210AB51900351D99 /* AuthActionHandler.swift in Sources */,
 				D4E1F043210FF390000FAF5C /* Evaluatable.swift in Sources */,
 				D480465220F56A2F00E78A72 /* Product.swift in Sources */,
@@ -891,6 +934,7 @@
 				D4C46FD9210ABC7E00351D99 /* AuthRouter.swift in Sources */,
 				D4CEEC8D2101566D009B70B4 /* UserBasketContent.swift in Sources */,
 				D4CEEC85210153E2009B70B4 /* BasketRequestFactory.swift in Sources */,
+				D4BF2F9A211D342400929F1A /* UserInfoRouting.swift in Sources */,
 				D42535ED20EEF69700986A85 /* User.swift in Sources */,
 				D42535F220EEF92400986A85 /* AuthRequestPerformer.swift in Sources */,
 				D42535F020EEF7FA00986A85 /* AuthRequestFactory.swift in Sources */,
@@ -906,6 +950,8 @@
 				D42535F620EEFF0200986A85 /* RegistrationResult.swift in Sources */,
 				D44504732114260B0093F660 /* KeyboardListener.swift in Sources */,
 				D4CEED26210A7773009B70B4 /* AuthViewProtocol.swift in Sources */,
+				D4BF2F8F211D294C00929F1A /* UserInfoController.swift in Sources */,
+				D4BF2F9C211D346F00929F1A /* UserInfoRouter.swift in Sources */,
 				D480464E20F50D1C00E78A72 /* ProductList.swift in Sources */,
 				D480464620F505F500E78A72 /* MethodNames.swift in Sources */,
 				D445049F2119950B0093F660 /* CatalogViewConfiguration.swift in Sources */,
@@ -914,6 +960,7 @@
 				D4DC96A420F97DF100B32844 /* RemoveReviewResult.swift in Sources */,
 				D425360720EF080B00986A85 /* ChangeUserDataRequestPerformer.swift in Sources */,
 				D44504A921199D5E0093F660 /* CatalogNavigationBarConfigurable.swift in Sources */,
+				D4BF2F96211D311C00929F1A /* UserInfoNavigationBarConfigurable.swift in Sources */,
 				D4C46FD3210AB35F00351D99 /* AuthActionHandling.swift in Sources */,
 				D4450498211971D50093F660 /* CatalogViewController.swift in Sources */,
 				D42535E120EEE7B200986A85 /* AbstractErrorParser.swift in Sources */,
@@ -922,6 +969,7 @@
 				D425360A20EF0B0B00986A85 /* LogoutResult.swift in Sources */,
 				D4CEEC892101551C009B70B4 /* RemoveFromBasketResult.swift in Sources */,
 				D4CEED2A210A827D009B70B4 /* AuthView.swift in Sources */,
+				D4BF2F98211D32B900929F1A /* UserInfoNavigationBarConfigurator.swift in Sources */,
 				D445049A2119903A0093F660 /* NavigationBarConfigurable.swift in Sources */,
 				D42535E720EEF04C00986A85 /* AbstractRequestFaсtory.swift in Sources */,
 			);

@@ -13,5 +13,6 @@ class CatalogModuleBuilder: ModuleBuilder {
     
     override func configure() {
         catalogViewController.navigationBarConfigurator = CatalogNavigationBarConfigurator()
+        catalogViewController.router = CatalogRouter()
     }
 }
