@@ -108,5 +108,25 @@
             </objects>
             <point key="canvasLocation" x="13.125" y="90.845070422535215"/>
         </scene>
+        <!--User Info Controller-->
+        <scene sceneID="CON-lu-4PI">
+            <objects>
+                <viewController storyboardIdentifier="UserInfoController" id="myh-qH-Zq5" customClass="UserInfoController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J0U-AR-dbs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nta-8Q-3ug"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ca4-o2-wyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="aRL-oq-ZPW" customClass="UserInfoModuleBuilder" customModule="GBShop" customModuleProvider="target">
+                    <connections>
+                        <outlet property="userInfoController" destination="myh-qH-Zq5" id="q3u-J6-jpB"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="808" y="91"/>
+        </scene>
     </scenes>
 </document>
